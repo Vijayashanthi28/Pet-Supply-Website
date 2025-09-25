@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Website</title>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+      <!-- Contact Info Bar -->
+    <div class="contact-info-bar">
+        <div class="contact-info-container">
+            <div class="contact-item">
+                <div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
+                +91-1234567890
+            </div>
+            <div class="contact-item">
+                <div class="email-icon"><i class="fa-solid fa-envelope"></i></div>
+                Support@petpalooza.com
+            </div>
+        </div>
+    </div>
+
+    <!-- Primary Navigation -->
+    <div class="primary-navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="brand-logo">
+                <span class="npaw-prints"><img src="images/navlogo.png"></span>
+              
+            </a>
+
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" class="search-field" placeholder="Search for products" id="searchInput">
+                    <button class="clear-search-btn" id="clearSearch">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Search Suggestions -->
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-header">
+                        <span class="suggestion-title">Suggestion</span>
+                        <button class="close-suggestions" id="closeSuggestions">
+                           <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="suggestions-list">
+                        <a href="#" class="suggestion-item">Wet Food</a>
+                        <a href="#" class="suggestion-item">Toys</a>
+                        <a href="#" class="suggestion-item">Skatrs</a>
+                        <a href="#" class="suggestion-item">Sheba</a>
+                        <a href="#" class="suggestion-item">Safeheart</a>
+                        <a href="#" class="suggestion-item">Royal Canin</a>
+                        <a href="#" class="suggestion-item">Pedigree Pro</a>
+                        <a href="#" class="suggestion-item">Henlo Treats</a>
+                        <a href="#" class="suggestion-item">Henlo Baked Food</a>
+                        <a href="#" class="suggestion-item">Drools Focus</a>
+                        <a href="#" class="suggestion-item">Cat Dry Food</a>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-actions">
+                <a href="index.html" class="nav-link highlight">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="login.html" class="user-icon-link">
+                    <i class="fa-solid fa-user"></i>
+                    Log In
+                </a>
+                <a href="cart.html" class="cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                    <span class="cart-badge">1</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secondary Navigation -->
+    <div class="secondary-navbar">
+        <div class="category-menu">
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="dogDropdown">
+                    Dog
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content" id="dogDropdown">
+                    <div class="dropdown-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dry & wet food</h3>
+                            <a href="dog.html" class="column-item">Dry Dog Food</a>
+                            <a href="dog.html" class="column-item">Wet Dog Food</a>
+                            <a href="dog.html" class="column-item">Veg Dog Food</a>
+                            <a href="dog.html" class="column-item">Grain Free Dog Food</a>
+                            <a href="dog.html" class="column-item">Human Grade Food</a>
+                            <a href="dog.html" class="column-item">Low Grain Dog Food</a>
+                            <a href="dog.html" class="column-item">Prescription Dog Food</a>
+                            <a href="dog.html" class="column-item">Puppy Food</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Clothing</h3>
+                            <a href="#" class="column-item">T-shirts</a>
+                            <a href="#" class="column-item">Raincoat</a>
+                            <a href="#" class="column-item">Sweaters</a>
+                            <a href="#" class="column-item">Special Occasion Wear</a>
+                            <a href="#" class="column-item">Hoodies & Sweatshirts</a>
+                            <a href="#" class="column-item">Jackets</a>
+                            <a href="#" class="column-item">Socks</a>
+                            <a href="#" class="column-item">Dresses</a>
+                            <a href="#" class="column-item">Shoes</a>
+                            <a href="#" class="column-item">Bandana</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dog toys</h3>
+                            <a href="#" class="column-item">Rope Toys</a>
+                            <a href="#" class="column-item">Tough Chew Toys</a>
+                            <a href="#" class="column-item">Chew Toys</a>
+                            <a href="#" class="column-item">Plush Toys</a>
+                            <a href="#" class="column-item">Interactive Toys</a>
+                            <a href="#" class="column-item">Squeaky Toys</a>
+                            <a href="#" class="column-item">Ball Toys</a>
+                            <a href="#" class="column-item">Fetch Toys</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Health care</h3>
+                            <a href="#" class="column-item">Skin Care</a>
+                            <a href="#" class="column-item">Eye Care</a>
+                            <a href="#" class="column-item">Digestion And Immunity</a>
+                            <a href="#" class="column-item">Hip And Joint Care</a>
+                            <a href="#" class="column-item">Dental Care</a>
+                            <a href="#" class="column-item">Calcium Supplements</a>
+                            <a href="#" class="column-item">Ear Care</a>
+                            <a href="#" class="column-item">Deworming</a>
+                            <a href="#" class="column-item">Tick And Flea Solutions</a>
+                            <a href="#" class="column-item">Antibiotics</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dog beds & mats</h3>
+                            <a href="#" class="column-item">Dog Beds</a>
+                            <a href="#" class="column-item">Dog Cushions</a>
+                            <a href="#" class="column-item">Dog Blankets</a>
+                            <a href="#" class="column-item">Dog Mats</a>
+                            <a href="#" class="column-item">Wooden Furniture</a>
+                            <a href="#" class="column-item">Dog Tents</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="catDropdown">
+                    Cat
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content" id="catDropdown">
+                    <div class="dropdown-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dry & wet food</h3>
+                            <a href="cat.html" class="column-item">Kitten Food</a>
+                            <a href="cat.html" class="column-item">Canned Cat Food</a>
+                            <a href="cat.html" class="column-item">Dry Cat Food</a>
+                            <a href="cat.html" class="column-item">Gravy Cat Food</a>
+                            <a href="cat.html" class="column-item">Prescription Cat Food</a>
+                            <a href="cat.html" class="column-item">Grain Free Cat Food</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Creamy & natural treats</h3>
+                            <a href="#" class="column-item">Creamy Cat Treats</a>
+                            <a href="#" class="column-item">Natural Cat Treats</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Cat toys</h3>
+                            <a href="#" class="column-item">Cat Interactive Toys</a>
+                            <a href="#" class="column-item">Catnip</a>
+                            <a href="#" class="column-item">Plush Toy</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Grooming</h3>
+                            <a href="#" class="column-item">Brushes And Combs</a>
+                            <a href="#" class="column-item">Cat Shampoos And Conditioners</a>
+                            <a href="#" class="column-item">Paw And Nail Care</a>
+                            <a href="#" class="column-item">Trimmers And Tools</a>
+                            <a href="#" class="column-item">Waterless Care</a>
+                            <a href="#" class="column-item">Bathing Supplie</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Cleaning & odor control</h3>
+                            <a href="#" class="column-item">Wipes And Stain Removers</a>
+                            <a href="#" class="column-item">Diapers And Lint Rollers</a>
+                            <a href="#" class="column-item">Cat Deodorizers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="smallPetsDropdown">
+                    Small pets
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content simple-dropdown" id="smallPetsDropdown">
+                    <a href="smallpets.html" class="dropdown-item">Hamsters</a>
+                    <a href="smallpets.html" class="dropdown-item">Guinea pigs</a>
+                    <a href="smallpets.html" class="dropdown-item">Rabbits</a>
+                    <a href="smallpets.html" class="dropdown-item">Rats</a>
+                    <a href="smallpets.html" class="dropdown-item">Fish</a>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="petServiceDropdown">
+                    Pet Service
+                     <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content service-dropdown" id="petServiceDropdown">
+                    <div class="service-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Pet Services</h3>
+                            <a href="petservice.html" class="column-item">Grooming Salon</a>
+                            <a href="petservice.html" class="column-item">Training Classes</a>
+                            <a href="petservice.html" class="column-item">Pet Hostel Boarding</a>
+                            <a href="petservice.html" class="column-item">Doggie Day Camb</a>
+                            <a href="petservice.html" class="column-item">Veterinary Care</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Adoption</h3>
+                            <a href="#" class="column-item">Pet Adoption</a>
+                            <a href="#" class="column-item">Petpalooza Charities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="shopBrandDropdown">
+                    Shop by Brand
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content brand-showcase-dropdown" id="shopBrandDropdown">
+                    <div class="brand-grid-dropdown">
+                        <div class="brand-logo-dropdown">
+                            <a href="#" class="brand-link"><img src="images/pedigree.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                            <a href="#" class="brand-link" ><img src="images/royal canin.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                     <a href="#" class="brand-link" ><img src="images/whiskas.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/brunos.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/shebalogo.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/Farmina-Logo.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/LOZALO_Brand_Logo_439668df-a243-4bdc-b086-5abdf9e55328.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/me-o.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/orijen.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/to ptails.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/why-choose.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/drools.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="shopBreedDropdown">
+                    Shop by Breed
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content breed-dropdown" id="shopBreedDropdown">
+                    <div class="breed-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Popular Dog Breeds</h3>
+                            <a href="#" class="column-item">Beagle</a>
+                            <a href="#" class="column-item">Dachshund</a>
+                            <a href="#" class="column-item">Shih Tzu</a>
+                            <a href="#" class="column-item">Pug</a>
+                            <a href="#" class="column-item">Cocker Spaniel</a>
+                            <a href="#" class="column-item">Boxer</a>
+                            <a href="#" class="column-item">German Shepherd</a>
+                            <a href="#" class="column-item">Golden Retriever</a>
+                            <a href="#" class="column-item">Labrador Retriever</a>
+                            <a href="#" class="column-item">Great Dane</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Popular Cat Breeds</h3>
+                            <a href="#" class="column-item">Persian Cat</a>
+                            <a href="#" class="column-item">Himalayan Cat</a>
+                            <a href="#" class="column-item">Bengal Cat</a>
+                            <a href="#" class="column-item">Siamese Cat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="consultvet.html" class="category-trigger">Consult a Vet</a>
+        </div>
+    </div>
+
+     <div class="banner-carousel-wrapper">
+        <div class="banner-carousel-container" id="bannerCarouselContainer">
+            <!-- Slide 1: Monsoon Edition -->
+            <div class="hero-slide-item slide-one">
+                <div class="slide-content-wrapper">
+                    <div class="slide-dog-image">
+                        <img src="images/index sl1.png" alt="Dog in raincoat">
+                    </div>
+                    <div class="slide-content-text">
+                        <h2>Monsoon Edition for Dogs</h2>
+                        <div class="waterproof-info">
+                          <img src="images/index sl2.png" class="umbrella-icon">
+                            100% Water Proof
+                        </div>
+                        
+                        <button class="shop-action-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Formal Wear Collection -->
+            <div class="hero-slide-item slide-two">
+                <div class="slide-content-wrapper">
+                    <div class="slide-content-text">
+                        <div class="price-badge">Only ₹ 399</div>
+                        <div class="save-tag">Save 100</div>
+                        <h2>Formal Wear Collection</h2>
+                        <div class="product-preview">
+                            <img src="images/index sl 4.png" alt="Red Tuxedo">
+                            <img src="images/index sl 5.png" alt="Black Bow Tie">
+                        </div>
+                        <p>Perfect for special occasions</p>
+                        <p>Premium quality materials</p>
+                        <button class="shop-action-btn">Shop Now</button>
+                    </div>
+                    <div class="slide-dog-image">
+                        <img src="images/ind 3.png" alt="Dog with bandana">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Natural & Safe Products -->
+            <div class="hero-slide-item slide-three">
+                <div class="slide-content-wrapper">
+                    <div class="slide-dog-image">
+                        <img src="images/ind 4.png" alt="Happy puppy">
+                    </div>
+                    <div class="slide-content-text">
+                        <div class="price-badge" style="background: #0045FF;">Get upto 40% Discount on all products</div>
+                        <h2>Natural & Safe</h2>
+                        <div class="inddiscount-info">
+                            <p>If you love your butties</p>
+                            <p>You know what's good for them</p>
+                            <p>That's why we decided</p>
+                            <br>
+                            <p><strong>NO ARTIFICIAL FOOD</strong></p>
+                            <p><strong>NO TOXIC TOYA</strong></p>
+                        </div>
+                        <button class="shop-action-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dot Indicators -->
+        <div class="carousel-dot-indicators">
+            <button class="dot-indicator-btn active-dot" onclick="showSlide(0)"></button>
+            <button class="dot-indicator-btn" onclick="showSlide(1)"></button>
+            <button class="dot-indicator-btn" onclick="showSlide(2)"></button>
+        </div>
+    </div>
+
+    <div class="pet-category-main-section">
+        <h2 class="pet-section-main-title">Shop by Pet</h2>
+        
+        <div class="pet-slider-main-container">
+            <button class="chevron-main-nav-btn chevron-left-main-btn" id="petPrevMainBtn">
+                <div class="chevron-main-icon chevron-left-main"></div>
+            </button>
+            
+            <div class="pet-slider-main-wrapper">
+                <div class="pet-items-main-track" id="petItemsMainTrack">
+                    <!-- Pet Category Cards -->
+                    <div class="pet-category-main-card pet-dog-main" data-pet="dog">
+                        <div class="pet-image-main-container">
+                            <img src="images/sh 1.png" alt="Dog">
+                        </div>
+                        <div class="pet-category-main-name">Dog</div>
+                    </div>
+
+                    <div class="pet-category-main-card pet-cat-main" data-pet="cat">
+                        <div class="pet-image-main-container">
+                            <img src="images/sh 2.png" alt="Cat">
+                        </div>
+                        <div class="pet-category-main-name">Cat</div>
+                    </div>
+
+                    <div class="pet-category-main-card pet-hamster-main" data-pet="hamsters">
+                        <div class="pet-image-main-container ">
+                            <img src="images/sh 3.png" alt="Hamster">
+                        </div>
+                        <div class="pet-category-main-name">Hamsters</div>
+                    </div>
+
+                    <div class="pet-category-main-card pet-guinea-main" data-pet="guinea-pig">
+                        <div class="pet-image-main-container">
+                            <img src="images/sh 4.png" alt="Guinea Pig">
+                        </div>
+                        <div class="pet-category-main-name">Guinea pigs</div>
+                    </div>
+
+                    <div class="pet-category-main-card pet-fish-main" data-pet="fish">
+                        <div class="pet-image-main-container">
+                            <img src="images/sh 5.png" alt="Fish">
+                        </div>
+                        <div class="pet-category-main-name">Fish</div>
+                    </div>
+
+                    <div class="pet-category-main-card pet-bird-main" data-pet="bird">
+                        <div class="pet-image-main-container">
+                            <img src="images/sh 6.png" alt="Bird">
+                        </div>
+                        <div class="pet-category-main-name">Bird</div>
+                    </div>
+
+                    <div class="pet-category-main-card pet-rabbit-main" data-pet="rabbit">
+                        <div class="pet-image-main-container">
+                            <img src="images/sh 7.png" alt="Rabbit">
+                        </div>
+                        <div class="pet-category-main-name">Rabbit</div>
+                    </div>
+
+                    <div class="pet-category-main-card pet-turtle-main" data-pet="turtle">
+                        <div class="pet-image-main-container">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjZjBmMGYwIiByeD0iNjAiLz4KPHN2ZyB4PSIyMCIgeT0iMjUiIHdpZHRoPSI4MCIgaGVpZ2h0PSI3MCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDgwIDcwIj4KPGVsbGlwc2UgY3g9IjQwIiBjeT0iNDAiIHJ4PSIzMCIgcnk9IjE4IiBmaWxsPSIjMjI4YjIyIi8+CjxjaXJjbGUgY3g9IjQwIiBjeT0iMjUiIHI9IjgiIGZpbGw9IiMyMjhiMjIiLz4KPGNpcmNsZSBjeD0iMzYiIGN5PSIyMyIgcj0iMiIgZmlsbD0iIzAwMCIvPgo8Y2lyY2xlIGN4PSI0NCIgY3k9IjIzIiByPSIyIiBmaWxsPSIjMDAwIi8+CjxlbGxpcHNlIGN4PSI0MCIgY3k9IjI4IiByeD0iMyIgcnk9IjIiIGZpbGw9IiMwMDAiLz4KPGVsbGlwc2UgY3g9IjIwIiBjeT0iNDAiIHJ4PSI2IiByeT0iOCIgZmlsbD0iIzIyOGIyMiIvPgo8ZWxsaXBzZSBjeD0iNjAiIGN5PSI0MCIgcng9IjYiIHJ5PSI4IiBmaWxsPSIjMjI4YjIyIi8+CjxlbGxpcHNlIGN4PSIzMCIgY3k9IjU1IiByeD0iNSIgcnk9IjciIGZpbGw9IiMyMjhiMjIiLz4KPGVsbGlwc2UgY3g9IjUwIiBjeT0iNTUiIHJ4PSI1IiByeT0iNyIgZmlsbD0iIzIyOGIyMiIvPgo8cG9seWdvbiBwb2ludHM9IjMwLDM1IDM1LDMwIDQ1LDMwIDUwLDM1IDQ1LDQ1IDM1LDQ1IiBmaWxsPSIjNDRhODQ0IiAvPgo8L3N2Zz4KPC9zdmc+" alt="Turtle">
+                        </div>
+                        <div class="pet-category-main-name">Turtle</div>
+                    </div>
+
+                    <div class="pet-category-main-card pet-ferret-main" data-pet="ferret">
+                        <div class="pet-image-main-container">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjZjBmMGYwIiByeD0iNjAiLz4KPHN2ZyB4PSIxNSIgeT0iMjAiIHdpZHRoPSI5MCIgaGVpZ2h0PSI4MCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDkwIDgwIj4KPGVsbGlwc2UgY3g9IjMwIiBjeT0iNDAiIHJ4PSIxNSIgcnk9IjEwIiBmaWxsPSIjYzQ5NDhkIi8+CjxlbGxpcHNlIGN4PSI2MCIgY3k9IjQwIiByeD0iMjAiIHJ5PSIyNSIgZmlsbD0iI2M0OTQ4ZCIvPgo8Y2lyY2xlIGN4PSI1NSIgY3k9IjM1IiByPSIzIiBmaWxsPSIjMDAwIi8+CjxjaXJjbGUgY3g9IjY1IiBjeT0iMzUiIHI9IjMiIGZpbGw9IiMwMDAiLz4KPGVsbGlwc2UgY3g9IjYwIiBjeT0iNDIiIHJ4PSIzIiByeT0iMiIgZmlsbD0iIzAwMCIvPgo8cGF0aCBkPSJNNTYgNDZRNjAgNDggNjQgNDYiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9Im5vbmUiLz4KPGVsbGlwc2UgY3g9IjQ1IiBjeT0iMjgiIHJ4PSI2IiByeT0iOCIgZmlsbD0iI2M0OTQ4ZCIvPgo8ZWxsaXBzZSBjeD0iNzUiIGN5PSIyOCIgcng9IjYiIHJ5PSI4IiBmaWxsPSIjYzQ5NDhkIi8+Cjwvc3ZnPgo8L3N2Zz4=" alt="Ferret">
+                        </div>
+                        <div class="pet-category-main-name">Ferret</div>
+                    </div>
+
+                    <div class="pet-category-main-card pet-lizard-main" data-pet="lizard">
+                        <div class="pet-image-main-container">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjZjBmMGYwIiByeD0iNjAiLz4KPHN2ZyB4PSIxNSIgeT0iMjUiIHdpZHRoPSI5MCIgaGVpZ2h0PSI3MCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDkwIDcwIj4KPGVsbGlwc2UgY3g9IjQ1IiBjeT0iMzUiIHJ4PSIyNSIgcnk9IjEyIiBmaWxsPSIjOWFjZDMyIi8+CjxyZWN0IHg9IjYwIiB5PSIzMyIgd2lkdGg9IjE1IiBoZWlnaHQ9IjQiIGZpbGw9IiM5YWNkMzIiIHJ4PSIyIi8+CjxjaXJjbGUgY3g9IjM4IiBjeT0iMzAiIHI9IjMiIGZpbGw9IiMwMDAiLz4KPGNpcmNsZSBjeD0iNTIiIGN5PSIzMCIgcj0iMyIgZmlsbD0iIzAwMCIvPgo8ZWxsaXBzZSBjeD0iNDUiIGN5PSI0MCIgcng9IjQiIHJ5PSIyIiBmaWxsPSIjMDAwIi8+CjxlbGxpcHNlIGN4PSIyMCIgY3k9IjQwIiByeD0iOCIgcnk9IjYiIGZpbGw9IiM5YWNkMzIiLz4KPGVsbGlwc2UgY3g9IjcwIiBjeT0iNDAiIHJ4PSI4IiByeT0iNiIgZmlsbD0iIzlhY2QzMiIvPgo8ZWxsaXBzZSBjeD0iMzUiIGN5PSI1MCIgcng9IjYiIHJ5PSI1IiBmaWxsPSIjOWFjZDMyIi8+CjxlbGxpcHNlIGN4PSI1NSIgY3k9IjUwIiByeD0iNiIgcnk9IjUiIGZpbGw9IiM5YWNkMzIiLz4KPC9zdmc+Cjwvc3ZnPg==" alt="Lizard">
+                        </div>
+                        <div class="pet-category-main-name">Lizard</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="chevron-main-nav-btn chevron-right-main-btn" id="petNextMainBtn">
+                <div class="chevron-main-icon chevron-right-main"></div>
+            </button>
+        </div>
+
+        <div class="scroll-main-indicator" id="scrollMainIndicator">
+            <div class="indicator-main-dot active"></div>
+            <div class="indicator-main-dot"></div>
+            <div class="indicator-main-dot"></div>
+            <div class="indicator-main-dot"></div>
+        </div>
+    </div>
+
+     <div class="calming-products-main-container">
+        <h1 class="indsection-header-title">Top Rated Calming Products</h1>
+
+        <div class="products-showcase-wrapper">
+            <!-- Left Promotional Section -->
+            <div class="stress-free-promo-section">
+                <div class="promo-hero-image-container">
+                   <img src="images/dog 1.png">
+                </div>
+                <div class="promo-content-details">
+                    <h2 class="promo-headline-text">Stress- Free Summer</h2>
+                    <p class="promo-description-text">Keep your pup calm along all season</p>
+                </div>
+            </div>
+
+            <!-- Product Carousel -->
+            <div class="product-carousel-main-wrapper">
+                <div class="carousel-products-container" id="productCarouselContainer">
+                    <!-- Product Card 1 -->
+                    <div class="product-display-card">
+                        <div class="indproduct-image-wrapper">
+                            <div class="product-placeholder-image">
+                               <img src="images/pro 1.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">Native Pet Calm Chews for Dogs - Anxiety & Calming Supplement</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-empty">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 299</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-display-card">
+                        <div class="product-image-wrapper">
+                             <div class="product-placeholder-image">
+                               <img src="images/pro 2.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">Zesty Paws Advanced Calming Bites for Dogs</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-empty">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 309</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-display-card">
+                        <div class="product-image-wrapper">
+                              <div class="product-placeholder-image">
+                               <img src="images/pro 3.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">VetIQ Calming - 60 Count</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 459</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-display-card">
+                        <div class="product-image-wrapper">
+                             <div class="product-placeholder-image">
+                               <img src="images/pro 4.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">Pet Honesty Hemp Calming Max Strength Soft Chews</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-empty">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 599</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5 -->
+                    <div class="product-display-card">
+                        <div class="product-image-wrapper">
+                              <div class="product-placeholder-image">
+                               <img src="images/pro 5.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">Natural Calming Aid for Dogs & Cats - Stress Relief</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 399</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6 -->
+                    <div class="product-display-card">
+                        <div class="product-image-wrapper">
+                             <div class="product-placeholder-image">
+                               <img src="images/pro 6.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">Premium Relaxation Treats for Anxious Pets</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-empty">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 449</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="carousel-navigation-controls carousel-prev-button" id="prevButton">
+                    <span class="nav-arrow-icon">‹</span>
+                </button>
+                <button class="carousel-navigation-controls carousel-next-button" id="nextButton">
+                    <span class="nav-arrow-icon">›</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="pet-services-container">
+        <!-- Main Autoship Promotion Banner -->
+        <div class="autoship-promo-banner">
+            <div class="promo-content-wrapper">
+                <h1 class="promo-main-title">Store - Door savings with Autoship.</h1>
+                <p class="indpromo-description" style="color:#fff;">
+                    SAVE 35% on first order plus stack limited-time deals<br>
+                    on top Autoship-items,see terms
+                </p>
+                <button class="shop-save-button">Shop & Save</button>
+            </div>
+            <div class="pet-image-section">
+                <div class="inddiscount-badge">Save<br>35%</div>
+                <img src="images/dog 3.png" class="pet-hero-image">
+                </div> 
+            </div>
+        </div>
+
+        <!-- Dog Food Special Offer -->
+        <div class="dog-food-offer-banner">
+            <div class="offer-text-content">
+                Buy 1 blue wilderness dry dog food,13-28lbs,<br>
+                get 2 free wild cut Toppers*
+            </div>
+            <div class="product-image-wrapper">
+                <div class="dog-food-product-image">
+                    <img src="images/image (12).png">
+                </div>
+            </div>
+            <button class="shop-now-cta-button">Shop Now</button>
+        </div>
+
+        <!-- Pet Services Section -->
+        <div class="services-main-section">
+            <h2 class="services-section-title">Pet Servicess</h2>
+            <p class="services-subtitle-text">Treats Rewards members earn points on every service</p>
+
+            <div class="services-grid-container">
+                <!-- Grooming Service -->
+                <div class="service-card-item">
+                    <div class="service-image-container">
+                        <div class="service-placeholder-image"><img src="images/care 1.png"></div>
+                        
+                    </div>
+                    <div class="service-content-area">
+                        <h3 class="service-name-title">Grooming</h3>
+                        <p class="service-description-text">
+                            Summer Salon Special<br>
+                            Bandana, toy & more plus 2X points
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Training Service -->
+                <div class="service-card-item">
+                    <div class="service-image-container">
+                         <div class="service-placeholder-image"><img src="images/dog 4.png"></div>
+                    </div>
+                    <div class="service-content-area">
+                        <h3 class="service-name-title">Training</h3>
+                        <p class="service-description-text">
+                            Any 6-wk Training Class<br>
+                            ONLY $129 (that's $21.50 a week)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pet Hotel Service -->
+                <div class="service-card-item">
+                    <div class="service-image-container">
+                        <div class="service-placeholder-image"><img src="images/care 2.png"></div>
+                    </div>
+                    <div class="service-content-area">
+                        <h3 class="service-name-title">Petshotel</h3>
+                        <p class="service-description-text">
+                            Stay 4 nights<br>
+                            get the 5th night FREE
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Doggy Day Camp Service -->
+                <div class="service-card-item">
+                    <div class="service-image-container">
+                        <div class="service-placeholder-image"><img src="images/care 3.png"></div>
+                    </div>
+                    <div class="service-content-area">
+                        <h3 class="service-name-title">Doggy day camp</h3>
+                        <p class="service-description-text">
+                            New Camper Special<br>
+                            SAVE 50% on 1st day of play
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <footer class="footer-wrapper">
+        <div class="footer-container">
+            <!-- Brand Section -->
+            <div class="brand-section">
+                <div class="brand-header">
+                    <div class="fpaw-prints">
+                        <div class="fpaw-print"><img src="images/navlogo.png"></div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-section-title">PetPalooza</div>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">About Us</li>
+                    <li class="footer-nav-item">Contact Us</li>
+                    <li class="footer-nav-item">Shop</li>
+                    <li class="footer-nav-item">Blog</li>
+                    <li class="footer-nav-item">FAQ</li>
+                </ul>
+            </div>
+
+            <!-- Categories Section -->
+            <div class="categories-section">
+                <div class="footer-section-title">Categories</div>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">Dog</li>
+                    <li class="footer-nav-item">Cat</li>
+                    <li class="footer-nav-item">Fish</li>
+                    <li class="footer-nav-item">Rats</li>
+                    <li class="footer-nav-item">Rabbits</li>
+                    <li class="footer-nav-item">Hamsters</li>
+                    <li class="footer-nav-item">Guinea pigs</li>
+                </ul>
+            </div>
+
+            <!-- Support Section -->
+            <div class="support-section">
+                <div class="footer-section-title">Support</div>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">Privacy policy</li>
+                    <li class="footer-nav-item">Refund & returns policy</li>
+                    <li class="footer-nav-item">Shipping policy</li>
+                    <li class="footer-nav-item">Terms & conditions</li>
+                </ul>
+            </div>
+
+            <!-- Social Media and Contact Section -->
+            <div class="social-media-section">
+                <div class="social-follow">
+                    <div class="footer-section-title">Follow</div>
+                    <div class="fsocial-icons">
+                        <div class="fsocial-icon facebook-icon"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="fsocial-icon instagram-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="fsocial-icon youtube-icon"><i class="fa-brands fa-youtube"></i></div>
+                        <div class="fsocial-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <div class="footer-section-title">Get in Touch</div>
+                    <div class="fcontact-info">
+                        Call: +91-1234567890<br>
+                        Email: support@petpalooza.com
+                    </div>
+                </div>
+
+                <div class="subscription-area">
+                    <div class="subscribe-title">For Subscribe,</div>
+                    <input type="email" placeholder="Email" class="email-input-field">
+                    <button class="subscribe-btn">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        //Claiming Products Slide
+         class CalmingProductsCarousel {
+            constructor() {
+                this.carouselContainer = document.getElementById('productCarouselContainer');
+                this.prevButton = document.getElementById('prevButton');
+                this.nextButton = document.getElementById('nextButton');
+                this.currentIndex = 0;
+                this.itemsToShow = this.calculateItemsToShow();
+                this.totalItems = document.querySelectorAll('.product-display-card').length;
+                this.maxIndex = Math.max(0, this.totalItems - this.itemsToShow);
+                
+                this.initializeCarousel();
+                this.bindEvents();
+                this.handleResize();
+            }
+
+            calculateItemsToShow() {
+                const containerWidth = this.carouselContainer.parentElement.offsetWidth;
+                if (containerWidth <= 480) return 1;
+                if (containerWidth <= 768) return 2;
+                if (containerWidth <= 1024) return 3;
+                return 4;
+            }
+
+            initializeCarousel() {
+                this.updateCarouselPosition();
+                this.updateButtonStates();
+            }
+
+            bindEvents() {
+                this.prevButton.addEventListener('click', () => this.slidePrevious());
+                this.nextButton.addEventListener('click', () => this.slideNext());
+                
+                // Touch/Swipe support
+                let startX = 0;
+                let endX = 0;
+                
+                this.carouselContainer.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                });
+                
+                this.carouselContainer.addEventListener('touchend', (e) => {
+                    endX = e.changedTouches[0].clientX;
+                    this.handleSwipe(startX, endX);
+                });
+            }
+
+            handleSwipe(startX, endX) {
+                const threshold = 50;
+                const difference = startX - endX;
+                
+                if (Math.abs(difference) > threshold) {
+                    if (difference > 0) {
+                        this.slideNext();
+                    } else {
+                        this.slidePrevious();
+                    }
+                }
+            }
+
+            slidePrevious() {
+                if (this.currentIndex > 0) {
+                    this.currentIndex--;
+                    this.updateCarouselPosition();
+                    this.updateButtonStates();
+                }
+            }
+
+            slideNext() {
+                if (this.currentIndex < this.maxIndex) {
+                    this.currentIndex++;
+                    this.updateCarouselPosition();
+                    this.updateButtonStates();
+                }
+            }
+
+            updateCarouselPosition() {
+                const cardWidth = 250; // Base card width
+                const gap = 20; // Gap between cards
+                const translateX = -(this.currentIndex * (cardWidth + gap));
+                this.carouselContainer.style.transform = `translateX(${translateX}px)`;
+            }
+
+            updateButtonStates() {
+                this.prevButton.style.opacity = this.currentIndex === 0 ? '0.5' : '1';
+                this.prevButton.style.pointerEvents = this.currentIndex === 0 ? 'none' : 'auto';
+                
+                this.nextButton.style.opacity = this.currentIndex >= this.maxIndex ? '0.5' : '1';
+                this.nextButton.style.pointerEvents = this.currentIndex >= this.maxIndex ? 'none' : 'auto';
+            }
+
+            handleResize() {
+                window.addEventListener('resize', () => {
+                    this.itemsToShow = this.calculateItemsToShow();
+                    this.maxIndex = Math.max(0, this.totalItems - this.itemsToShow);
+                    
+                    // Reset position if current index exceeds new max
+                    if (this.currentIndex > this.maxIndex) {
+                        this.currentIndex = this.maxIndex;
+                    }
+                    
+                    this.updateCarouselPosition();
+                    this.updateButtonStates();
+                });
+            }
+
+            // Auto-play functionality (optional)
+            startAutoPlay(interval = 3000) {
+                this.autoPlayInterval = setInterval(() => {
+                    if (this.currentIndex >= this.maxIndex) {
+                        this.currentIndex = 0;
+                    } else {
+                        this.currentIndex++;
+                    }
+                    this.updateCarouselPosition();
+                    this.updateButtonStates();
+                }, interval);
+            }
+
+            stopAutoPlay() {
+                if (this.autoPlayInterval) {
+                    clearInterval(this.autoPlayInterval);
+                }
+            }
+        }
+
+        // Initialize the carousel when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = new CalmingProductsCarousel();
+            
+            // Optional: Start auto-play (uncomment to enable)
+            // carousel.startAutoPlay(4000);
+            
+            // Pause auto-play on hover (if auto-play is enabled)
+            const carouselWrapper = document.querySelector('.product-carousel-main-wrapper');
+            carouselWrapper.addEventListener('mouseenter', () => {
+                // carousel.stopAutoPlay();
+            });
+            
+            carouselWrapper.addEventListener('mouseleave', () => {
+                // carousel.startAutoPlay(4000);
+            });
+        });
+
+        //Pet Slider
+                class PetCategoryMainSlider {
+            constructor() {
+                this.track = document.getElementById('petItemsMainTrack');
+                this.prevBtn = document.getElementById('petPrevMainBtn');
+                this.nextBtn = document.getElementById('petNextMainBtn');
+                this.indicators = document.querySelectorAll('.indicator-main-dot');
+                
+                this.itemWidth = 220; // Card width + gap
+                this.visibleItems = this.getVisibleItems();
+                this.currentIndex = 0;
+                this.totalItems = 10;
+                this.maxIndex = Math.max(0, this.totalItems - this.visibleItems);
+                this.animationDirection = 'right';
+                
+                this.init();
+                this.updateButtons();
+                this.updateIndicators();
+            }
+
+            getVisibleItems() {
+                const containerWidth = this.track.parentElement.offsetWidth;
+                return Math.floor(containerWidth / this.itemWidth);
+            }
+
+            init() {
+                // Event listeners for navigation buttons
+                this.prevBtn.addEventListener('click', () => this.slide('prev'));
+                this.nextBtn.addEventListener('click', () => this.slide('next'));
+                
+                // Event listeners for indicators
+                this.indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => this.goToSection(index));
+                });
+                
+                // Touch/swipe support
+                this.initTouchSupport();
+                
+                // Keyboard navigation
+                this.initKeyboardSupport();
+                
+                // Resize handler
+                window.addEventListener('resize', () => this.handleResize());
+                
+                // Auto-scroll
+                this.startAutoSlide();
+            }
+
+            slide(direction) {
+                if (direction === 'next' && this.currentIndex < this.maxIndex) {
+                    this.currentIndex++;
+                    this.animationDirection = 'left';
+                } else if (direction === 'prev' && this.currentIndex > 0) {
+                    this.currentIndex--;
+                    this.animationDirection = 'right';
+                }
+                
+                this.updateSliderPosition();
+                this.updateButtons();
+                this.updateIndicators();
+                this.addSlideAnimation();
+                this.restartAutoSlide();
+            }
+
+            goToSection(sectionIndex) {
+                const itemsPerSection = Math.ceil(this.totalItems / this.indicators.length);
+                const targetIndex = Math.min(sectionIndex * itemsPerSection, this.maxIndex);
+                
+                this.animationDirection = targetIndex > this.currentIndex ? 'left' : 'right';
+                this.currentIndex = targetIndex;
+                this.updateSliderPosition();
+                this.updateButtons();
+                this.updateIndicators();
+                this.addSlideAnimation();
+                this.restartAutoSlide();
+            }
+
+            updateSliderPosition() {
+                const translateX = -this.currentIndex * this.itemWidth;
+                this.track.style.transform = `translateX(${translateX}px)`;
+            }
+
+            addSlideAnimation() {
+                // Remove existing animation classes
+                this.track.classList.remove('slide-in-left', 'slide-in-right');
+                
+                // Add animation class based on direction
+                if (this.animationDirection === 'left') {
+                    this.track.classList.add('slide-in-left');
+                } else {
+                    this.track.classList.add('slide-in-right');
+                }
+                
+                // Remove animation class after animation completes
+                setTimeout(() => {
+                    this.track.classList.remove('slide-in-left', 'slide-in-right');
+                }, 500);
+            }
+
+            updateButtons() {
+                // Update previous button
+                if (this.currentIndex === 0) {
+                    this.prevBtn.classList.add('disabled');
+                } else {
+                    this.prevBtn.classList.remove('disabled');
+                }
+                
+                // Update next button
+                if (this.currentIndex >= this.maxIndex) {
+                    this.nextBtn.classList.add('disabled');
+                } else {
+                    this.nextBtn.classList.remove('disabled');
+                }
+            }
+
+            updateIndicators() {
+                const activeSection = Math.floor(this.currentIndex / Math.ceil(this.totalItems / this.indicators.length));
+                
+                this.indicators.forEach((indicator, index) => {
+                    if (index === activeSection) {
+                        indicator.classList.add('active');
+                    } else {
+                        indicator.classList.remove('active');
+                    }
+                });
+            }
+
+            initTouchSupport() {
+                let touchStartX = 0;
+                let touchEndX = 0;
+                let touchStartTime = 0;
+                
+                this.track.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    touchStartTime = Date.now();
+                });
+                
+                this.track.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    const touchDuration = Date.now() - touchStartTime;
+                    this.handleSwipe(touchStartX, touchEndX, touchDuration);
+                });
+            }
+
+            handleSwipe(startX, endX, duration) {
+                const swipeThreshold = 50;
+                const maxDuration = 500; // Maximum duration for a valid swipe
+                const swipeDistance = endX - startX;
+                
+                if (Math.abs(swipeDistance) > swipeThreshold && duration < maxDuration) {
+                    if (swipeDistance > 0) {
+                        this.slide('prev');
+                    } else {
+                        this.slide('next');
+                    }
+                }
+            }
+
+            initKeyboardSupport() {
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') {
+                        e.preventDefault();
+                        this.slide('prev');
+                    } else if (e.key === 'ArrowRight') {
+                        e.preventDefault();
+                        this.slide('next');
+                    }
+                });
+            }
+
+            handleResize() {
+                this.visibleItems = this.getVisibleItems();
+                this.maxIndex = Math.max(0, this.totalItems - this.visibleItems);
+                
+                if (this.currentIndex > this.maxIndex) {
+                    this.currentIndex = this.maxIndex;
+                }
+                
+                this.updateSliderPosition();
+                this.updateButtons();
+                this.updateIndicators();
+            }
+
+            startAutoSlide() {
+                this.autoSlideInterval = setInterval(() => {
+                    if (this.currentIndex >= this.maxIndex) {
+                        this.currentIndex = 0;
+                        this.animationDirection = 'right';
+                    } else {
+                        this.currentIndex++;
+                        this.animationDirection = 'left';
+                    }
+                    this.updateSliderPosition();
+                    this.updateButtons();
+                    this.updateIndicators();
+                    this.addSlideAnimation();
+                }, 4000);
+            }
+
+            stopAutoSlide() {
+                clearInterval(this.autoSlideInterval);
+            }
+
+            restartAutoSlide() {
+                this.stopAutoSlide();
+                this.startAutoSlide();
+            }
+        }
+
+        // Initialize slider when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const petMainSlider = new PetCategoryMainSlider();
+            
+            // Pause auto-slide on hover
+            const sliderContainer = document.querySelector('.pet-slider-main-container');
+            sliderContainer.addEventListener('mouseenter', () => petMainSlider.stopAutoSlide());
+            sliderContainer.addEventListener('mouseleave', () => petMainSlider.startAutoSlide());
+        });
+
+        // Add click animations and interactions to pet cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const petMainCards = document.querySelectorAll('.pet-category-main-card');
+            
+            petMainCards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    const petType = card.dataset.pet;
+                    
+                    // Add click animation
+                    card.style.transform = 'translateY(-8px) scale(0.95)';
+                    card.style.transition = 'all 0.1s ease';
+                    
+                    setTimeout(() => {
+                        card.style.transform = 'translateY(-8px) scale(1)';
+                        card.style.transition = 'all 0.3s ease';
+                    }, 100);
+                    
+                    // Add pulse effect to the image container
+                    const imageContainer = card.querySelector('.pet-image-main-container');
+                    imageContainer.style.animation = 'pulse 0.3s ease-in-out';
+                    
+                    setTimeout(() => {
+                        imageContainer.style.animation = '';
+                    }, 300);
+                    
+                    // Simulate navigation (replace with actual navigation logic)
+                    console.log(`Navigating to ${petType} category`);
+                    
+                    // Optional: Show a temporary feedback
+                    const petName = card.querySelector('.pet-category-main-name');
+                    const originalText = petName.textContent;
+                    petName.textContent = 'Selected!';
+                    petName.style.color = '#e74c3c';
+                    
+                    setTimeout(() => {
+                        petName.textContent = originalText;
+                        petName.style.color = '';
+                    }, 1000);
+                });
+
+                // Add hover sound effect simulation
+                card.addEventListener('mouseenter', () => {
+                    card.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.15)';
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.boxShadow = '';
+                });
+            });
+        });
+
+        // Add pulse animation to CSS dynamically
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+                100% { transform: scale(1); }
+            }
+        `;
+        document.head.appendChild(style);
+
+
+        //Hero Carousel
+          let currentSlideIndex = 0;
+        const totalSlides = 3;
+        const carouselContainer = document.getElementById('bannerCarouselContainer');
+        const dotButtons = document.querySelectorAll('.dot-indicator-btn');
+        let autoSlideInterval;
+
+        function showSlide(slideIndex) {
+            // Update current slide index
+            currentSlideIndex = slideIndex;
+            
+            // Move carousel to the correct position
+            const translateX = -slideIndex * 100;
+            carouselContainer.style.transform = `translateX(${translateX}%)`;
+            
+            // Update dot indicators
+            dotButtons.forEach((dot, index) => {
+                if (index === slideIndex) {
+                    dot.classList.add('active-dot');
+                } else {
+                    dot.classList.remove('active-dot');
+                }
+            });
+        }
+
+        function nextSlide() {
+            const nextIndex = (currentSlideIndex + 1) % totalSlides;
+            showSlide(nextIndex);
+        }
+
+        function previousSlide() {
+            const prevIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+            showSlide(prevIndex);
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Initialize carousel
+        document.addEventListener('DOMContentLoaded', function() {
+            showSlide(0);
+            startAutoSlide();
+            
+            // Pause auto-slide when user hovers over carousel
+            const carouselWrapper = document.querySelector('.banner-carousel-wrapper');
+            carouselWrapper.addEventListener('mouseenter', stopAutoSlide);
+            carouselWrapper.addEventListener('mouseleave', startAutoSlide);
+        });
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                previousSlide();
+            } else if (event.key === 'ArrowRight') {
+                nextSlide();
+            }
+        });
+
+        // Add touch/swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carouselContainer.addEventListener('touchstart', function(event) {
+            touchStartX = event.changedTouches[0].screenX;
+        });
+
+        carouselContainer.addEventListener('touchend', function(event) {
+            touchEndX = event.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const swipeDistance = touchEndX - touchStartX;
+            
+            if (Math.abs(swipeDistance) > swipeThreshold) {
+                if (swipeDistance > 0) {
+                    // Swiped right - go to previous slide
+                    previousSlide();
+                } else {
+                    // Swiped left - go to next slide
+                    nextSlide();
+                }
+            }
+        }
+          // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchSuggestions = document.getElementById('searchSuggestions');
+        const clearSearchBtn = document.getElementById('clearSearch');
+        const closeSuggestionsBtn = document.getElementById('closeSuggestions');
+
+        searchInput.addEventListener('focus', function() {
+            if (this.value.length > 0) {
+                searchSuggestions.classList.add('show');
+            }
+        });
+
+        searchInput.addEventListener('input', function() {
+            if (this.value.length > 0) {
+                clearSearchBtn.style.display = 'block';
+                searchSuggestions.classList.add('show');
+            } else {
+                clearSearchBtn.style.display = 'none';
+                searchSuggestions.classList.remove('show');
+            }
+        });
+
+        clearSearchBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            this.style.display = 'none';
+            searchSuggestions.classList.remove('show');
+            searchInput.focus();
+        });
+
+        closeSuggestionsBtn.addEventListener('click', function() {
+            searchSuggestions.classList.remove('show');
+        });
+
+        // Close suggestions when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!searchInput.contains(event.target) && !searchSuggestions.contains(event.target)) {
+                searchSuggestions.classList.remove('show');
+            }
+        });
+
+        // Dropdown functionality
+        const categoryTriggers = document.querySelectorAll('.category-trigger[data-dropdown]');
+        let activeDropdown = null;
+
+        categoryTriggers.forEach(trigger => {
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                const dropdownId = this.getAttribute('data-dropdown');
+                const dropdown = document.getElementById(dropdownId);
+                
+                // Close any currently active dropdown
+                if (activeDropdown && activeDropdown !== dropdown) {
+                    activeDropdown.classList.remove('show');
+                    activeDropdown.previousElementSibling.classList.remove('active');
+                }
+                
+                // Toggle current dropdown
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                    this.classList.remove('active');
+                    activeDropdown = null;
+                } else {
+                    dropdown.classList.add('show');
+                    this.classList.add('active');
+                    activeDropdown = dropdown;
+                }
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(event) {
+            const isDropdownTrigger = event.target.closest('.category-trigger[data-dropdown]');
+            const isDropdownContent = event.target.closest('.dropdown-content');
+            
+            if (!isDropdownTrigger && !isDropdownContent && activeDropdown) {
+                activeDropdown.classList.remove('show');
+                activeDropdown.previousElementSibling.classList.remove('active');
+                activeDropdown = null;
+            }
+        });
+
+        // Handle suggestion item clicks
+        document.querySelectorAll('.suggestion-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                searchInput.value = this.textContent;
+                searchSuggestions.classList.remove('show');
+                // Here you would typically perform the search or redirect
+                console.log('Searching for:', this.textContent);
+            });
+        });
+
+        // Prevent dropdown from closing when clicking inside
+        document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+            dropdown.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+
+        // Handle mobile responsiveness
+        function handleResize() {
+            if (window.innerWidth <= 768) {
+                // Close all dropdowns on mobile resize
+                if (activeDropdown) {
+                    activeDropdown.classList.remove('show');
+                    activeDropdown.previousElementSibling.classList.remove('active');
+                    activeDropdown = null;
+                }
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

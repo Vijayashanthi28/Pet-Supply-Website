@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Website</title>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+      <!-- Contact Info Bar -->
+    <div class="contact-info-bar">
+        <div class="contact-info-container">
+            <div class="contact-item">
+                <div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
+                +91-1234567890
+            </div>
+            <div class="contact-item">
+                <div class="email-icon"><i class="fa-solid fa-envelope"></i></div>
+                Support@petpalooza.com
+            </div>
+        </div>
+    </div>
+
+    <!-- Primary Navigation -->
+    <div class="primary-navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="brand-logo">
+                <span class="npaw-prints"><img src="images/navlogo.png"></span>
+              
+            </a>
+
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" class="search-field" placeholder="Search for products" id="searchInput">
+                    <button class="clear-search-btn" id="clearSearch">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Search Suggestions -->
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-header">
+                        <span class="suggestion-title">Suggestion</span>
+                        <button class="close-suggestions" id="closeSuggestions">
+                           <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="suggestions-list">
+                        <a href="#" class="suggestion-item">Wet Food</a>
+                        <a href="#" class="suggestion-item">Toys</a>
+                        <a href="#" class="suggestion-item">Skatrs</a>
+                        <a href="#" class="suggestion-item">Sheba</a>
+                        <a href="#" class="suggestion-item">Safeheart</a>
+                        <a href="#" class="suggestion-item">Royal Canin</a>
+                        <a href="#" class="suggestion-item">Pedigree Pro</a>
+                        <a href="#" class="suggestion-item">Henlo Treats</a>
+                        <a href="#" class="suggestion-item">Henlo Baked Food</a>
+                        <a href="#" class="suggestion-item">Drools Focus</a>
+                        <a href="#" class="suggestion-item">Cat Dry Food</a>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-actions">
+                <a href="index.html" class="nav-link highlight">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="login.html" class="user-icon-link">
+                    <i class="fa-solid fa-user"></i>
+                    Log In
+                </a>
+                <a href="cart.html" class="cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                    <span class="cart-badge">1</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secondary Navigation -->
+    <div class="secondary-navbar">
+        <div class="category-menu">
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="dogDropdown">
+                    Dog
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content" id="dogDropdown">
+                    <div class="dropdown-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dry & wet food</h3>
+                            <a href="dog.html" class="column-item">Dry Dog Food</a>
+                            <a href="dog.html" class="column-item">Wet Dog Food</a>
+                            <a href="dog.html" class="column-item">Veg Dog Food</a>
+                            <a href="dog.html" class="column-item">Grain Free Dog Food</a>
+                            <a href="dog.html" class="column-item">Human Grade Food</a>
+                            <a href="dog.html" class="column-item">Low Grain Dog Food</a>
+                            <a href="dog.html" class="column-item">Prescription Dog Food</a>
+                            <a href="dog.html" class="column-item">Puppy Food</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Clothing</h3>
+                            <a href="#" class="column-item">T-shirts</a>
+                            <a href="#" class="column-item">Raincoat</a>
+                            <a href="#" class="column-item">Sweaters</a>
+                            <a href="#" class="column-item">Special Occasion Wear</a>
+                            <a href="#" class="column-item">Hoodies & Sweatshirts</a>
+                            <a href="#" class="column-item">Jackets</a>
+                            <a href="#" class="column-item">Socks</a>
+                            <a href="#" class="column-item">Dresses</a>
+                            <a href="#" class="column-item">Shoes</a>
+                            <a href="#" class="column-item">Bandana</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dog toys</h3>
+                            <a href="#" class="column-item">Rope Toys</a>
+                            <a href="#" class="column-item">Tough Chew Toys</a>
+                            <a href="#" class="column-item">Chew Toys</a>
+                            <a href="#" class="column-item">Plush Toys</a>
+                            <a href="#" class="column-item">Interactive Toys</a>
+                            <a href="#" class="column-item">Squeaky Toys</a>
+                            <a href="#" class="column-item">Ball Toys</a>
+                            <a href="#" class="column-item">Fetch Toys</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Health care</h3>
+                            <a href="#" class="column-item">Skin Care</a>
+                            <a href="#" class="column-item">Eye Care</a>
+                            <a href="#" class="column-item">Digestion And Immunity</a>
+                            <a href="#" class="column-item">Hip And Joint Care</a>
+                            <a href="#" class="column-item">Dental Care</a>
+                            <a href="#" class="column-item">Calcium Supplements</a>
+                            <a href="#" class="column-item">Ear Care</a>
+                            <a href="#" class="column-item">Deworming</a>
+                            <a href="#" class="column-item">Tick And Flea Solutions</a>
+                            <a href="#" class="column-item">Antibiotics</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dog beds & mats</h3>
+                            <a href="#" class="column-item">Dog Beds</a>
+                            <a href="#" class="column-item">Dog Cushions</a>
+                            <a href="#" class="column-item">Dog Blankets</a>
+                            <a href="#" class="column-item">Dog Mats</a>
+                            <a href="#" class="column-item">Wooden Furniture</a>
+                            <a href="#" class="column-item">Dog Tents</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="catDropdown">
+                    Cat
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content" id="catDropdown">
+                    <div class="dropdown-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dry & wet food</h3>
+                            <a href="cat.html" class="column-item">Kitten Food</a>
+                            <a href="cat.html" class="column-item">Canned Cat Food</a>
+                            <a href="cat.html" class="column-item">Dry Cat Food</a>
+                            <a href="cat.html" class="column-item">Gravy Cat Food</a>
+                            <a href="cat.html" class="column-item">Prescription Cat Food</a>
+                            <a href="cat.html" class="column-item">Grain Free Cat Food</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Creamy & natural treats</h3>
+                            <a href="#" class="column-item">Creamy Cat Treats</a>
+                            <a href="#" class="column-item">Natural Cat Treats</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Cat toys</h3>
+                            <a href="#" class="column-item">Cat Interactive Toys</a>
+                            <a href="#" class="column-item">Catnip</a>
+                            <a href="#" class="column-item">Plush Toy</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Grooming</h3>
+                            <a href="#" class="column-item">Brushes And Combs</a>
+                            <a href="#" class="column-item">Cat Shampoos And Conditioners</a>
+                            <a href="#" class="column-item">Paw And Nail Care</a>
+                            <a href="#" class="column-item">Trimmers And Tools</a>
+                            <a href="#" class="column-item">Waterless Care</a>
+                            <a href="#" class="column-item">Bathing Supplie</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Cleaning & odor control</h3>
+                            <a href="#" class="column-item">Wipes And Stain Removers</a>
+                            <a href="#" class="column-item">Diapers And Lint Rollers</a>
+                            <a href="#" class="column-item">Cat Deodorizers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="smallPetsDropdown">
+                    Small pets
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content simple-dropdown" id="smallPetsDropdown">
+                    <a href="smallpets.html" class="dropdown-item">Hamsters</a>
+                    <a href="smallpets.html" class="dropdown-item">Guinea pigs</a>
+                    <a href="smallpets.html" class="dropdown-item">Rabbits</a>
+                    <a href="smallpets.html" class="dropdown-item">Rats</a>
+                    <a href="smallpets.html" class="dropdown-item">Fish</a>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="petServiceDropdown">
+                    Pet Service
+                     <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content service-dropdown" id="petServiceDropdown">
+                    <div class="service-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Pet Services</h3>
+                            <a href="petservice.html" class="column-item">Grooming Salon</a>
+                            <a href="petservice.html" class="column-item">Training Classes</a>
+                            <a href="petservice.html" class="column-item">Pet Hostel Boarding</a>
+                            <a href="petservice.html" class="column-item">Doggie Day Camb</a>
+                            <a href="petservice.html" class="column-item">Veterinary Care</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Adoption</h3>
+                            <a href="#" class="column-item">Pet Adoption</a>
+                            <a href="#" class="column-item">Petpalooza Charities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="shopBrandDropdown">
+                    Shop by Brand
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content brand-showcase-dropdown" id="shopBrandDropdown">
+                    <div class="brand-grid-dropdown">
+                        <div class="brand-logo-dropdown">
+                            <a href="#" class="brand-link"><img src="images/pedigree.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                            <a href="#" class="brand-link" ><img src="images/royal canin.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                     <a href="#" class="brand-link" ><img src="images/whiskas.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/brunos.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/shebalogo.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/Farmina-Logo.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/LOZALO_Brand_Logo_439668df-a243-4bdc-b086-5abdf9e55328.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/me-o.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/orijen.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/to ptails.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/why-choose.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/drools.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="shopBreedDropdown">
+                    Shop by Breed
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content breed-dropdown" id="shopBreedDropdown">
+                    <div class="breed-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Popular Dog Breeds</h3>
+                            <a href="#" class="column-item">Beagle</a>
+                            <a href="#" class="column-item">Dachshund</a>
+                            <a href="#" class="column-item">Shih Tzu</a>
+                            <a href="#" class="column-item">Pug</a>
+                            <a href="#" class="column-item">Cocker Spaniel</a>
+                            <a href="#" class="column-item">Boxer</a>
+                            <a href="#" class="column-item">German Shepherd</a>
+                            <a href="#" class="column-item">Golden Retriever</a>
+                            <a href="#" class="column-item">Labrador Retriever</a>
+                            <a href="#" class="column-item">Great Dane</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Popular Cat Breeds</h3>
+                            <a href="#" class="column-item">Persian Cat</a>
+                            <a href="#" class="column-item">Himalayan Cat</a>
+                            <a href="#" class="column-item">Bengal Cat</a>
+                            <a href="#" class="column-item">Siamese Cat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="consultvet.html" class="category-trigger">Consult a Vet</a>
+        </div>
+    </div>
+
+
+     <div class="breadcrumb-nav">
+        <a href="#">Home</a> / <a href="#">Dog</a> / Turkey, Chickpea & Sweet Potato | Small Breed 2Kg | Cart / <span style="color: #333;">Checkout</span>
+     </div>
+
+    <div class="checkout-container">
+        <h1 class="checkout-title">Checkout</h1>
+        
+        <div class="payment-form">
+            <form id="checkoutForm">
+                <div class="form-section">
+                    <h2 class="section-heading">Contact</h2>
+                    <input type="email" class="input-field" id="customerEmail" placeholder="Email (for order updates)" required>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="emailUpdates">
+                        <label for="emailUpdates">Send me order updates, news and offers on Email and WhatsApp</label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="section-heading">Delivery</h2>
+                    <input type="text" class="input-field" id="deliveryCountry" value="India" readonly>
+                    <div class="input-row">
+                        <input type="text" class="input-field" id="firstName" placeholder="First name" required>
+                        <input type="text" class="input-field" id="lastName" placeholder="Last name" required>
+                    </div>
+                    <input type="text" class="input-field" id="streetAddress" placeholder="Address" required>
+                    <input type="text" class="input-field" id="apartment" placeholder="Apartment, suite (Optional)">
+                    <div class="input-triple">
+                        <input type="text" class="input-field" id="cityName" placeholder="City" required>
+                        <input type="text" class="input-field" id="stateName" placeholder="State" required>
+                        <input type="text" class="input-field" id="postalCode" placeholder="Pincode" required>
+                    </div>
+                    <input type="tel" class="input-field" id="phoneNumber" placeholder="Phone" required>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="saveInfo">
+                        <label for="saveInfo">Save this information for next time</label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2 class="section-heading">Choose your payment method</h2>
+                    <div class="payment-methods">
+                        <div class="payment-option" onclick="selectPayment('online')">
+                            <input type="radio" name="payment" value="online" id="onlinePayment">
+                            <label for="onlinePayment">Secure transaction(UPI, Cards, Wallets, Net banking)</label>
+                            <div class="paypayment-icons">
+                                <span class="visa"><img src="images/image (39).png"></span>
+                               <span class="visa"><img src="images/image (40).png"></span>
+                                <span class="visa"><img src="images/image (41).png"></span>
+                               <span class="visa"><img src="images/image (42).png"></span>
+                               <span class="visa"><img src="images/image (43).png"></span>
+                            </div>
+                        </div>
+                        <div class="payment-option" onclick="selectPayment('cod')">
+                            <input type="radio" name="payment" value="cod" id="codPayment">
+                            <label for="codPayment">Cash on Delivery</label>
+                        </div>
+                    </div>
+                </div>
+
+               <button class="order-btn" onclick="window.location.href='confirmation.html'">Order Now</button>
+
+            </form>
+        </div>
+
+        <div class="payorder-summary">
+            <h3 class="summary-title">Order summary</h3>
+            
+            <div class="payproduct-item">
+                <img src="images/pay image.png" class="payproduct-image">
+                <div class="payproduct-details">
+                    <h4>Turkey, Chickpea & Sweet Potato Small Breed 2Kg</h4>
+                    <div class="product-meta">MRP: ₹ 1,699</div>
+                    <div class="product-meta">Quantity: 1</div>
+                    <div class="product-meta">Size: 1kg</div>
+                </div>
+            </div>
+
+            <div class="discount-section">
+                <input type="text" class="discount-input" id="discountCode" placeholder="Discount code or gift card">
+                <button type="button" class="apply-btn" onclick="applyDiscount()">Apply</button>
+            </div>
+
+            <div class="summary-row">
+                <span>Sub total</span>
+                <span>₹ 1,699</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>₹ 99.00</span>
+            </div>
+            <div class="shipping-info">Shipping to Madhya Pradesh</div>
+
+            <div class="summary-row total">
+                <span>Total</span>
+                <span>₹ 1,998</span>
+            </div>
+            <div class="shipping-info">Includes ₹53 as GST to GSTN</div>
+        </div>
+    </div>
+
+     <footer class="footer-wrapper">
+        <div class="footer-container">
+            <!-- Brand Section -->
+            <div class="brand-section">
+                <div class="brand-header">
+                    <div class="fpaw-prints">
+                        <div class="fpaw-print"><img src="images/navlogo.png"></div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-section-title">PetPalooza</div>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">About Us</li>
+                    <li class="footer-nav-item">Contact Us</li>
+                    <li class="footer-nav-item">Shop</li>
+                    <li class="footer-nav-item">Blog</li>
+                    <li class="footer-nav-item">FAQ</li>
+                </ul>
+            </div>
+
+            <!-- Categories Section -->
+            <div class="categories-section">
+                <div class="footer-section-title">Categories</div>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">Dog</li>
+                    <li class="footer-nav-item">Cat</li>
+                    <li class="footer-nav-item">Fish</li>
+                    <li class="footer-nav-item">Rats</li>
+                    <li class="footer-nav-item">Rabbits</li>
+                    <li class="footer-nav-item">Hamsters</li>
+                    <li class="footer-nav-item">Guinea pigs</li>
+                </ul>
+            </div>
+
+            <!-- Support Section -->
+            <div class="support-section">
+                <div class="footer-section-title">Support</div>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">Privacy policy</li>
+                    <li class="footer-nav-item">Refund & returns policy</li>
+                    <li class="footer-nav-item">Shipping policy</li>
+                    <li class="footer-nav-item">Terms & conditions</li>
+                </ul>
+            </div>
+
+            <!-- Social Media and Contact Section -->
+            <div class="social-media-section">
+                <div class="social-follow">
+                    <div class="footer-section-title">Follow</div>
+                    <div class="fsocial-icons">
+                        <div class="fsocial-icon facebook-icon"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="fsocial-icon instagram-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="fsocial-icon youtube-icon"><i class="fa-brands fa-youtube"></i></div>
+                        <div class="fsocial-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <div class="footer-section-title">Get in Touch</div>
+                    <div class="fcontact-info">
+                        Call: +91-1234567890<br>
+                        Email: support@petpalooza.com
+                    </div>
+                </div>
+
+                <div class="subscription-area">
+                    <div class="subscribe-title">For Subscribe,</div>
+                    <input type="email" placeholder="Email" class="email-input-field">
+                    <button class="subscribe-btn">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+          // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchSuggestions = document.getElementById('searchSuggestions');
+        const clearSearchBtn = document.getElementById('clearSearch');
+        const closeSuggestionsBtn = document.getElementById('closeSuggestions');
+
+        searchInput.addEventListener('focus', function() {
+            if (this.value.length > 0) {
+                searchSuggestions.classList.add('show');
+            }
+        });
+
+        searchInput.addEventListener('input', function() {
+            if (this.value.length > 0) {
+                clearSearchBtn.style.display = 'block';
+                searchSuggestions.classList.add('show');
+            } else {
+                clearSearchBtn.style.display = 'none';
+                searchSuggestions.classList.remove('show');
+            }
+        });
+
+        clearSearchBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            this.style.display = 'none';
+            searchSuggestions.classList.remove('show');
+            searchInput.focus();
+        });
+
+        closeSuggestionsBtn.addEventListener('click', function() {
+            searchSuggestions.classList.remove('show');
+        });
+
+        // Close suggestions when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!searchInput.contains(event.target) && !searchSuggestions.contains(event.target)) {
+                searchSuggestions.classList.remove('show');
+            }
+        });
+
+        // Dropdown functionality
+        const categoryTriggers = document.querySelectorAll('.category-trigger[data-dropdown]');
+        let activeDropdown = null;
+
+        categoryTriggers.forEach(trigger => {
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                const dropdownId = this.getAttribute('data-dropdown');
+                const dropdown = document.getElementById(dropdownId);
+                
+                // Close any currently active dropdown
+                if (activeDropdown && activeDropdown !== dropdown) {
+                    activeDropdown.classList.remove('show');
+                    activeDropdown.previousElementSibling.classList.remove('active');
+                }
+                
+                // Toggle current dropdown
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                    this.classList.remove('active');
+                    activeDropdown = null;
+                } else {
+                    dropdown.classList.add('show');
+                    this.classList.add('active');
+                    activeDropdown = dropdown;
+                }
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(event) {
+            const isDropdownTrigger = event.target.closest('.category-trigger[data-dropdown]');
+            const isDropdownContent = event.target.closest('.dropdown-content');
+            
+            if (!isDropdownTrigger && !isDropdownContent && activeDropdown) {
+                activeDropdown.classList.remove('show');
+                activeDropdown.previousElementSibling.classList.remove('active');
+                activeDropdown = null;
+            }
+        });
+
+        // Handle suggestion item clicks
+        document.querySelectorAll('.suggestion-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                searchInput.value = this.textContent;
+                searchSuggestions.classList.remove('show');
+                // Here you would typically perform the search or redirect
+                console.log('Searching for:', this.textContent);
+            });
+        });
+
+        // Prevent dropdown from closing when clicking inside
+        document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+            dropdown.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+
+        // Handle mobile responsiveness
+        function handleResize() {
+            if (window.innerWidth <= 768) {
+                // Close all dropdowns on mobile resize
+                if (activeDropdown) {
+                    activeDropdown.classList.remove('show');
+                    activeDropdown.previousElementSibling.classList.remove('active');
+                    activeDropdown = null;
+                }
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        //Payment
+          // Payment method selection
+        function selectPayment(method) {
+            const options = document.querySelectorAll('.payment-option');
+            options.forEach(option => option.classList.remove('selected'));
+            
+            if (method === 'online') {
+                document.getElementById('onlinePayment').checked = true;
+                options[0].classList.add('selected');
+            } else if (method === 'cod') {
+                document.getElementById('codPayment').checked = true;
+                options[1].classList.add('selected');
+            }
+        }
+
+        // Discount code application
+        function applyDiscount() {
+            const discountCode = document.getElementById('discountCode').value.trim();
+            
+            if (!discountCode) {
+                alert('Please enter a discount code!');
+                return;
+            }
+
+            // Simple discount validation (you can customize this)
+            const validCodes = ['SAVE10', 'FIRST20', 'WELCOME15'];
+            
+            if (validCodes.includes(discountCode.toUpperCase())) {
+                alert(`Discount code "${discountCode}" applied successfully!`);
+                // Here you would typically update the total price
+            } else {
+                alert('Invalid discount code. Please try again.');
+            }
+        }
+
+        // Save customer information to local storage
+        function saveCustomerInfo() {
+            const customerData = {
+                email: document.getElementById('customerEmail').value,
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                address: document.getElementById('streetAddress').value,
+                apartment: document.getElementById('apartment').value,
+                city: document.getElementById('cityName').value,
+                state: document.getElementById('stateName').value,
+                pincode: document.getElementById('postalCode').value,
+                phone: document.getElementById('phoneNumber').value,
+                emailUpdates: document.getElementById('emailUpdates').checked,
+                savedAt: new Date().toISOString()
+            };
+
+            // Store in multiple storage types as requested
+            localStorage.setItem('petFoodCustomerData', JSON.stringify(customerData));
+            sessionStorage.setItem('petFoodCheckoutSession', JSON.stringify(customerData));
+            
+            console.log('Customer data saved:', customerData);
+            alert('Your information has been saved successfully!');
+        }
+
+        // Load saved information
+        function loadSavedInfo() {
+            const savedData = localStorage.getItem('petFoodCustomerData');
+            if (savedData) {
+                const customerData = JSON.parse(savedData);
+                
+                // Fill form with saved data
+                document.getElementById('customerEmail').value = customerData.email || '';
+                document.getElementById('firstName').value = customerData.firstName || '';
+                document.getElementById('lastName').value = customerData.lastName || '';
+                document.getElementById('streetAddress').value = customerData.address || '';
+                document.getElementById('apartment').value = customerData.apartment || '';
+                document.getElementById('cityName').value = customerData.city || '';
+                document.getElementById('stateName').value = customerData.state || '';
+                document.getElementById('postalCode').value = customerData.pincode || '';
+                document.getElementById('phoneNumber').value = customerData.phone || '';
+                document.getElementById('emailUpdates').checked = customerData.emailUpdates || false;
+                
+                console.log('Loaded customer data:', customerData);
+            }
+        }
+
+        // Form submission handler
+        document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validate form
+            const requiredFields = ['customerEmail', 'firstName', 'lastName', 'streetAddress', 'cityName', 'stateName', 'postalCode', 'phoneNumber'];
+            let isValid = true;
+            
+            requiredFields.forEach(fieldId => {
+                const field = document.getElementById(fieldId);
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#ef4444';
+                } else {
+                    field.style.borderColor = '#ddd';
+                }
+            });
+
+            // Check if payment method is selected
+            const paymentMethod = document.querySelector('input[name="payment"]:checked');
+            if (!paymentMethod) {
+                isValid = false;
+                alert('Please select a payment method!');
+                return;
+            }
+
+            if (!isValid) {
+                alert('Please fill in all required fields!');
+                return;
+            }
+
+            // Save info if checkbox is checked
+            if (document.getElementById('saveInfo').checked) {
+                saveCustomerInfo();
+            }
+
+            // Process order
+            const orderData = {
+                customer: {
+                    email: document.getElementById('customerEmail').value,
+                    firstName: document.getElementById('firstName').value,
+                    lastName: document.getElementById('lastName').value,
+                    phone: document.getElementById('phoneNumber').value
+                },
+                delivery: {
+                    address: document.getElementById('streetAddress').value,
+                    apartment: document.getElementById('apartment').value,
+                    city: document.getElementById('cityName').value,
+                    state: document.getElementById('stateName').value,
+                    pincode: document.getElementById('postalCode').value
+                },
+                paymentMethod: paymentMethod.value,
+                orderTotal: '₹ 1,998',
+                orderDate: new Date().toISOString()
+            };
+
+            console.log('Order submitted:', orderData);
+            
+            alert(`Thank you ${orderData.customer.firstName}! Your order has been placed successfully. You will receive a confirmation email shortly.`);
+            
+            // Store order in session for confirmation page
+            sessionStorage.setItem('latestOrder', JSON.stringify(orderData));
+        });
+
+        // Save info checkbox handler
+        document.getElementById('saveInfo').addEventListener('change', function() {
+            if (this.checked) {
+                alert('Your information will be saved when you place the order.');
+            }
+        });
+
+        // Load saved information on page load
+        window.addEventListener('load', function() {
+            loadSavedInfo();
+            
+            // Set default payment method
+            selectPayment('online');
+            
+            console.log('Checkout page loaded. Check localStorage and sessionStorage for saved data.');
+        });
+
+        // Input field focus effects
+        document.querySelectorAll('.input-field').forEach(field => {
+            field.addEventListener('focus', function() {
+                this.style.borderColor = '#2563eb';
+            });
+            
+            field.addEventListener('blur', function() {
+                if (this.value.trim() === '' && this.hasAttribute('required')) {
+                    this.style.borderColor = '#ef4444';
+                } else {
+                    this.style.borderColor = '#ddd';
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

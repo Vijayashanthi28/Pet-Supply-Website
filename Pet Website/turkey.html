@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Website</title>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+     <!-- Contact Info Bar -->
+    <div class="contact-info-bar">
+        <div class="contact-info-container">
+            <div class="contact-item">
+                <div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
+                +91-1234567890
+            </div>
+            <div class="contact-item">
+                <div class="email-icon"><i class="fa-solid fa-envelope"></i></div>
+                Support@petpalooza.com
+            </div>
+        </div>
+    </div>
+
+    <!-- Primary Navigation -->
+    <div class="primary-navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="brand-logo">
+                <span class="npaw-prints"><img src="images/navlogo.png"></span>
+              
+            </a>
+
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" class="search-field" placeholder="Search for products" id="searchInput">
+                    <button class="clear-search-btn" id="clearSearch">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Search Suggestions -->
+                <div class="search-suggestions" id="searchSuggestions">
+                    <div class="suggestion-header">
+                        <span class="suggestion-title">Suggestion</span>
+                        <button class="close-suggestions" id="closeSuggestions">
+                           <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="suggestions-list">
+                        <a href="#" class="suggestion-item">Wet Food</a>
+                        <a href="#" class="suggestion-item">Toys</a>
+                        <a href="#" class="suggestion-item">Skatrs</a>
+                        <a href="#" class="suggestion-item">Sheba</a>
+                        <a href="#" class="suggestion-item">Safeheart</a>
+                        <a href="#" class="suggestion-item">Royal Canin</a>
+                        <a href="#" class="suggestion-item">Pedigree Pro</a>
+                        <a href="#" class="suggestion-item">Henlo Treats</a>
+                        <a href="#" class="suggestion-item">Henlo Baked Food</a>
+                        <a href="#" class="suggestion-item">Drools Focus</a>
+                        <a href="#" class="suggestion-item">Cat Dry Food</a>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-actions">
+                <a href="index.html" class="nav-link highlight">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="login.html" class="user-icon-link">
+                    <i class="fa-solid fa-user"></i>
+                    Log In
+                </a>
+                <a href="cart.html" class="cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                    <span class="cart-badge">1</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secondary Navigation -->
+    <div class="secondary-navbar">
+        <div class="category-menu">
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="dogDropdown">
+                    Dog
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content" id="dogDropdown">
+                    <div class="dropdown-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dry & wet food</h3>
+                            <a href="dog.html" class="column-item">Dry Dog Food</a>
+                            <a href="dog.html" class="column-item">Wet Dog Food</a>
+                            <a href="dog.html" class="column-item">Veg Dog Food</a>
+                            <a href="dog.html" class="column-item">Grain Free Dog Food</a>
+                            <a href="dog.html" class="column-item">Human Grade Food</a>
+                            <a href="dog.html" class="column-item">Low Grain Dog Food</a>
+                            <a href="dog.html" class="column-item">Prescription Dog Food</a>
+                            <a href="dog.html" class="column-item">Puppy Food</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Clothing</h3>
+                            <a href="#" class="column-item">T-shirts</a>
+                            <a href="#" class="column-item">Raincoat</a>
+                            <a href="#" class="column-item">Sweaters</a>
+                            <a href="#" class="column-item">Special Occasion Wear</a>
+                            <a href="#" class="column-item">Hoodies & Sweatshirts</a>
+                            <a href="#" class="column-item">Jackets</a>
+                            <a href="#" class="column-item">Socks</a>
+                            <a href="#" class="column-item">Dresses</a>
+                            <a href="#" class="column-item">Shoes</a>
+                            <a href="#" class="column-item">Bandana</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dog toys</h3>
+                            <a href="#" class="column-item">Rope Toys</a>
+                            <a href="#" class="column-item">Tough Chew Toys</a>
+                            <a href="#" class="column-item">Chew Toys</a>
+                            <a href="#" class="column-item">Plush Toys</a>
+                            <a href="#" class="column-item">Interactive Toys</a>
+                            <a href="#" class="column-item">Squeaky Toys</a>
+                            <a href="#" class="column-item">Ball Toys</a>
+                            <a href="#" class="column-item">Fetch Toys</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Health care</h3>
+                            <a href="#" class="column-item">Skin Care</a>
+                            <a href="#" class="column-item">Eye Care</a>
+                            <a href="#" class="column-item">Digestion And Immunity</a>
+                            <a href="#" class="column-item">Hip And Joint Care</a>
+                            <a href="#" class="column-item">Dental Care</a>
+                            <a href="#" class="column-item">Calcium Supplements</a>
+                            <a href="#" class="column-item">Ear Care</a>
+                            <a href="#" class="column-item">Deworming</a>
+                            <a href="#" class="column-item">Tick And Flea Solutions</a>
+                            <a href="#" class="column-item">Antibiotics</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dog beds & mats</h3>
+                            <a href="#" class="column-item">Dog Beds</a>
+                            <a href="#" class="column-item">Dog Cushions</a>
+                            <a href="#" class="column-item">Dog Blankets</a>
+                            <a href="#" class="column-item">Dog Mats</a>
+                            <a href="#" class="column-item">Wooden Furniture</a>
+                            <a href="#" class="column-item">Dog Tents</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="catDropdown">
+                    Cat
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content" id="catDropdown">
+                    <div class="dropdown-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Dry & wet food</h3>
+                            <a href="cat.html" class="column-item">Kitten Food</a>
+                            <a href="cat.html" class="column-item">Canned Cat Food</a>
+                            <a href="cat.html" class="column-item">Dry Cat Food</a>
+                            <a href="cat.html" class="column-item">Gravy Cat Food</a>
+                            <a href="cat.html" class="column-item">Prescription Cat Food</a>
+                            <a href="cat.html" class="column-item">Grain Free Cat Food</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Creamy & natural treats</h3>
+                            <a href="#" class="column-item">Creamy Cat Treats</a>
+                            <a href="#" class="column-item">Natural Cat Treats</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Cat toys</h3>
+                            <a href="#" class="column-item">Cat Interactive Toys</a>
+                            <a href="#" class="column-item">Catnip</a>
+                            <a href="#" class="column-item">Plush Toy</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Grooming</h3>
+                            <a href="#" class="column-item">Brushes And Combs</a>
+                            <a href="#" class="column-item">Cat Shampoos And Conditioners</a>
+                            <a href="#" class="column-item">Paw And Nail Care</a>
+                            <a href="#" class="column-item">Trimmers And Tools</a>
+                            <a href="#" class="column-item">Waterless Care</a>
+                            <a href="#" class="column-item">Bathing Supplie</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Cleaning & odor control</h3>
+                            <a href="#" class="column-item">Wipes And Stain Removers</a>
+                            <a href="#" class="column-item">Diapers And Lint Rollers</a>
+                            <a href="#" class="column-item">Cat Deodorizers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="smallPetsDropdown">
+                    Small pets
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content simple-dropdown" id="smallPetsDropdown">
+                    <a href="smallpets.html" class="dropdown-item">Hamsters</a>
+                    <a href="smallpets.html" class="dropdown-item">Guinea pigs</a>
+                    <a href="smallpets.html" class="dropdown-item">Rabbits</a>
+                    <a href="smallpets.html" class="dropdown-item">Rats</a>
+                    <a href="smallpets.html" class="dropdown-item">Fish</a>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="petServiceDropdown">
+                    Pet Service
+                     <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content service-dropdown" id="petServiceDropdown">
+                    <div class="service-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Pet Services</h3>
+                            <a href="petservice.html" class="column-item">Grooming Salon</a>
+                            <a href="petservice.html" class="column-item">Training Classes</a>
+                            <a href="petservice.html" class="column-item">Pet Hostel Boarding</a>
+                            <a href="petservice.html" class="column-item">Doggie Day Camb</a>
+                            <a href="petservice.html" class="column-item">Veterinary Care</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Adoption</h3>
+                            <a href="#" class="column-item">Pet Adoption</a>
+                            <a href="#" class="column-item">Petpalooza Charities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="shopBrandDropdown">
+                    Shop by Brand
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content brand-showcase-dropdown" id="shopBrandDropdown">
+                    <div class="brand-grid-dropdown">
+                        <div class="brand-logo-dropdown">
+                            <a href="#" class="brand-link"><img src="images/pedigree.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                            <a href="#" class="brand-link" ><img src="images/royal canin.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                     <a href="#" class="brand-link" ><img src="images/whiskas.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/brunos.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/shebalogo.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/Farmina-Logo.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/LOZALO_Brand_Logo_439668df-a243-4bdc-b086-5abdf9e55328.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/me-o.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/orijen.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/to ptails.png"></a>
+                        </div>
+                        <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/why-choose.png"></a>
+                        </div>
+                         <div class="brand-logo-dropdown">
+                                                        <a href="#" class="brand-link" ><img src="images/drools.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-dropdown">
+                <div class="category-trigger" data-dropdown="shopBreedDropdown">
+                    Shop by Breed
+                    <div class="chevron-icon"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="dropdown-content breed-dropdown" id="shopBreedDropdown">
+                    <div class="breed-grid">
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Popular Dog Breeds</h3>
+                            <a href="#" class="column-item">Beagle</a>
+                            <a href="#" class="column-item">Dachshund</a>
+                            <a href="#" class="column-item">Shih Tzu</a>
+                            <a href="#" class="column-item">Pug</a>
+                            <a href="#" class="column-item">Cocker Spaniel</a>
+                            <a href="#" class="column-item">Boxer</a>
+                            <a href="#" class="column-item">German Shepherd</a>
+                            <a href="#" class="column-item">Golden Retriever</a>
+                            <a href="#" class="column-item">Labrador Retriever</a>
+                            <a href="#" class="column-item">Great Dane</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <h3 class="column-header">Popular Cat Breeds</h3>
+                            <a href="#" class="column-item">Persian Cat</a>
+                            <a href="#" class="column-item">Himalayan Cat</a>
+                            <a href="#" class="column-item">Bengal Cat</a>
+                            <a href="#" class="column-item">Siamese Cat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="consultvet.html" class="category-trigger">Consult a Vet</a>
+        </div>
+    </div>
+    
+     <div class="pet-product-container">
+        <!-- Breadcrumb -->
+        <nav class="product-breadcrumb">
+            <a href="index.html">Home</a> / <a href="dog.html">Dog</a> / Turkey, Chickpea & Sweet Potato | Small Breed 2Kg
+        </nav>
+
+        <!-- Main Product Section -->
+        <div class="product-main-section">
+            <!-- Image Gallery -->
+            <div class="product-image-gallery">
+                <img src="images/pay image.png" alt="Zoe Dog Food Main Image" class="main-product-image" id="mainProductImage">
+                
+                <!-- Image Dots -->
+                <div class="image-dots-container">
+                    <span class="image-dot-indicator active-dot" data-image="0"></span>
+                    <span class="image-dot-indicator" data-image="1"></span>
+                    <span class="image-dot-indicator" data-image="2"></span>
+                    <span class="image-dot-indicator" data-image="3"></span>
+                    <span class="image-dot-indicator" data-image="4"></span>
+                </div>
+
+                <!-- Thumbnail Images -->
+                <div class="product-thumbnail-grid">
+                    <div class="thumbnail-image-item active-thumbnail" data-image="0">
+                        <img src="images/pay image.png" alt="Product Image 1">
+                    </div>
+                    <div class="thumbnail-image-item" data-image="1">
+                        <img src="images/tu 2.png" alt="Product Image 2">
+                    </div>
+                    <div class="thumbnail-image-item" data-image="2">
+                        <img src="images/turkey 1.png" alt="Product Image 3">
+                    </div>
+                    <div class="thumbnail-image-item" data-image="3">
+                        <img src="images/tu 3.png" alt="Product Image 4">
+                    </div>
+                    <div class="thumbnail-image-item" data-image="4">
+                        <img src="images/tu 4.png" alt="Product Image 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info-section">
+                <h1 class="product-title-main">Turkey, Chickpea & Sweet Potato | Small Breed 2Kg</h1>
+                
+                <div class="product-details-list">
+                    <div class="product-detail-item"><strong>Coupon code:</strong> 92921</div>
+                    <div class="product-detail-item"><strong>Brand:</strong> Zoe</div>
+                    <div class="product-detail-item">Quality sources of protein, including turkey and eggs, are at the foundation of this recipe. It's what they are paired with that makes Zoe different. From "superfoods" like quinoa and berries to healthy fats and probiotics, Zoe dog food has been thoughtfully created to help your best furry pet partner is healthier option and gets a flavorful dish they can enjoy.</div>
+                    <div class="product-detail-item">• <strong>MADE IN ONTARIO, CANADA</strong></div>
+                    <div class="product-detail-item">• <strong>HEALTHY GRAINS:</strong> Quinoa, oats & barley</div>
+                    <div class="product-detail-item"><strong>Importer name:</strong> Maple pets international pvt ltd</div>
+                    <div class="product-detail-item"><strong>Importer Address:</strong> 742,Dwarkpuri, Indore (M.P.)</div>
+                    <div class="product-detail-item"><strong>For grievance:</strong> 9165061</div>
+                    <div class="product-detail-item"><strong>Mfg. Lic. No.:</strong> 2024 pet nutrition BC CANADA</div>
+                </div>
+
+                <div class="product-pricing-info">
+                    <div class="product-mrp-price">MRP: ₹ 1,899.00</div>
+                    <div class="price-inclusive-text">Inclusive of all taxes</div>
+                </div>
+
+                <!-- Size Selection -->
+                <div class="product-options-section">
+                    <div class="option-group-container">
+                        <label class="option-label-text">Available Size:</label>
+                        <div class="size-options-container">
+                            <button class="size-option-button selected-size" data-size="1kg">1kg</button>
+                            <button class="size-option-button" data-size="2kg">2kg</button>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Selection -->
+                    <div class="option-group-container">
+                        <label class="option-label-text">Quantity:</label>
+                        <div class="quantity-selector-container">
+                            <div class="quantity-control-group">
+                                <button class="qty-control-button" id="decreaseQty">-</button>
+                                <input type="number" class="qty-input-field" id="quantityInput" value="1" min="1" readonly>
+                                <button class="qty-control-button" id="increaseQty">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="product-action-buttons">
+                  <a href="cart.html" > <button class="add-cart-button">Add to cart</button></a>
+                   <a href="payment.html" >   <button class="buy-now-button">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Description -->
+        <div class="product-description-section">
+            <div class="description-content-area">
+                <h2 class="description-title-main">Product Description</h2>
+
+                <div class="description-feature-block">
+                    <h3 class="feature-title-text">Fresh Dog Food</h3>
+                    <p class="feature-description-text">Small Breed Dog Food, Turkey, Chickpea & Sweet Potato<br>
+                    Quality, Canadian sources of protein, including fresh turkey, turkey meal and eggs are at the foundation of our turkey recipe.</p>
+                </div>
+
+                <div class="description-feature-block">
+                    <h3 class="feature-title-text">Flaxseed, chia seed, salmon oil for healthy skin & coat</h3>
+                    <p class="feature-description-text">This powerful combination of salmon oil, chia & flax ensures a diet rich in omega-3 and omega-6 fatty acids to help your pet maintain a healthy skin & coat.</p>
+                </div>
+
+                <div class="description-feature-block">
+                    <h3 class="feature-title-text">Prebiotics & probiotics for a healthy digestive system</h3>
+                    <p class="feature-description-text">Prebiotics & probiotics, along with ingredients rich in dietary fiber such as chickpea, sweet potato, navy beans, oats and barley, help support a healthy digestive system.</p>
+                </div>
+
+                <div class="description-feature-block">
+                    <h3 class="feature-title-text">Rich in antioxidants to support a healthy immune system</h3>
+                    <p class="feature-description-text">Berries like blueberries, carrots, pumpkin loaded with antioxidants and phytonutrients, along with vitamins and minerals help support a healthy immune system.</p>
+                </div>
+
+                <div class="description-feature-block">
+                    <h3 class="feature-title-text">Zoe Small Breed Dog Food</h3>
+                    <p class="feature-description-text">This dry dog food made with fresh deboned turkey is loaded with protein, antioxidants and probiotics. It helps maintain normal blood sugar level, and is loaded with antioxidants, phytonutrients, vitamins and minerals.Zoe believe in growing old with our pets, so our recipe is loaded with what your pet needs for a long and healthy life.How can this get possibly better? Zoe food is made with real ingredients about turkey that's not only simple yet so flavour packed and satisfying. We've combined these quality proteins with super foods, ancient grains, fruits, vegetables and has seeds, blueberries and berries.This recipe combines the best of quinoa, oats, barley and sweet potatoes. Add ancient grains to the mix like flax seeds, chia seeds and salmon oil enriched in heart's content).</p>
+                </div>
+            </div>
+
+            <div class="description-benefits-image">
+                <img src="images/turkey 1.png" alt="Product Benefits">
+            </div>
+        </div>
+    </div>
+
+      <div class="customer-review-main-container">
+        <div class="review-section-wrapper">
+            <!-- Left Side - Existing Reviews -->
+            <div class="existing-reviews-panel">
+                <h2 class="review-section-title">Customer Reviews</h2>
+                
+                <div class="overall-rating-display">
+                    <div class="rating-stars-container">
+                        <span class="rating-star-display">☆</span>
+                        <span class="rating-star-display">☆</span>
+                        <span class="rating-star-display">☆</span>
+                        <span class="rating-star-display">☆</span>
+                        <span class="rating-star-display">☆</span>
+                    </div>
+                    <span class="total-reviews-count">0 reviews</span>
+                </div>
+
+                <!-- Rating Breakdown -->
+                <div class="rating-breakdown-list">
+                    <!-- 5 Stars -->
+                    <div class="rating-breakdown-item">
+                        <div class="breakdown-star-group">
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon">★</span>
+                        </div>
+                        <div class="rating-progress-bar">
+                            <div class="rating-progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- 4 Stars -->
+                    <div class="rating-breakdown-item">
+                        <div class="breakdown-star-group">
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon empty-star">☆</span>
+                        </div>
+                        <div class="rating-progress-bar">
+                            <div class="rating-progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- 3 Stars -->
+                    <div class="rating-breakdown-item">
+                        <div class="breakdown-star-group">
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon empty-star">☆</span>
+                            <span class="breakdown-star-icon empty-star">☆</span>
+                        </div>
+                        <div class="rating-progress-bar">
+                            <div class="rating-progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- 2 Stars -->
+                    <div class="rating-breakdown-item">
+                        <div class="breakdown-star-group">
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon empty-star">☆</span>
+                            <span class="breakdown-star-icon empty-star">☆</span>
+                            <span class="breakdown-star-icon empty-star">☆</span>
+                        </div>
+                        <div class="rating-progress-bar">
+                            <div class="rating-progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <!-- 1 Star -->
+                    <div class="rating-breakdown-item">
+                        <div class="breakdown-star-group">
+                            <span class="breakdown-star-icon">★</span>
+                            <span class="breakdown-star-icon empty-star">☆</span>
+                            <span class="breakdown-star-icon empty-star">☆</span>
+                            <span class="breakdown-star-icon empty-star">☆</span>
+                            <span class="breakdown-star-icon empty-star">☆</span>
+                        </div>
+                        <div class="rating-progress-bar">
+                            <div class="rating-progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Review Form -->
+            <div class="review-form-panel">
+                <h3 class="review-form-title">Be the first to review "Turkey, Chickpea & Sweet Potato | Small Breed 2Kg"</h3>
+                <p class="review-form-subtitle">Your email address will not be published. Required fields are marked <span class="required-field-indicator">*</span></p>
+
+                <form class="customer-review-form" id="reviewForm">
+                    <!-- Star Rating Input -->
+                    <div class="form-field-group">
+                        <label class="form-field-label">Your Rating <span class="required-field-indicator">*</span></label>
+                        <div class="user-rating-input-container">
+                            <div class="interactive-star-rating" id="userStarRating">
+                                <span class="user-rating-star" data-rating="1">★</span>
+                                <span class="user-rating-star" data-rating="2">★</span>
+                                <span class="user-rating-star" data-rating="3">★</span>
+                                <span class="user-rating-star" data-rating="4">★</span>
+                                <span class="user-rating-star" data-rating="5">★</span>
+                            </div>
+                            <div class="current-rating-display" id="ratingDisplay">Click to rate this product</div>
+                        </div>
+                    </div>
+
+                    <!-- Review Text -->
+                    <div class="form-field-group">
+                        <label class="form-field-label" for="reviewText">Your Review <span class="required-field-indicator">*</span></label>
+                        <textarea class="review-text-input" id="reviewText" placeholder="Write your review here..." required></textarea>
+                    </div>
+
+                    <!-- Name Input -->
+                    <div class="form-field-group">
+                        <label class="form-field-label" for="reviewerName">Your Name <span class="required-field-indicator">*</span></label>
+                        <input type="text" class="review-form-input" id="reviewerName" placeholder="Enter your name" required>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-field-group">
+                        <label class="form-field-label" for="reviewerEmail">Your Email <span class="required-field-indicator">*</span></label>
+                        <input type="email" class="review-form-input" id="reviewerEmail" placeholder="Enter your email address" required>
+                    </div>
+
+                    <!-- Save Info Checkbox -->
+                    <div class="save-info-checkbox-container">
+                        <input type="checkbox" class="save-info-checkbox" id="saveInfo">
+                        <label for="saveInfo" class="checkbox-label-text">
+                            Save my name, email, and website in this browser for the next time I comment.
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-review-button" id="submitButton">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+ <div class="calming-products-main-container">
+        <h1 class="indsection-header-title">Top Rated Calming Products</h1>
+
+        <div class="products-showcase-wrapper">
+            <!-- Left Promotional Section -->
+            <div class="stress-free-promo-section">
+                <div class="promo-hero-image-container">
+                   <img src="images/dog 1.png">
+                </div>
+                <div class="promo-content-details">
+                    <h2 class="promo-headline-text">Stress- Free Summer</h2>
+                    <p class="promo-description-text">Keep your pup calm along all season</p>
+                </div>
+            </div>
+
+            <!-- Product Carousel -->
+            <div class="product-carousel-main-wrapper">
+                <div class="carousel-products-container" id="productCarouselContainer">
+                    <!-- Product Card 1 -->
+                    <div class="product-display-card">
+                        <div class="indproduct-image-wrapper">
+                            <div class="product-placeholder-image">
+                               <img src="images/pro 1.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">Native Pet Calm Chews for Dogs - Anxiety & Calming Supplement</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-empty">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 299</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-display-card">
+                        <div class="product-image-wrapper">
+                             <div class="product-placeholder-image">
+                               <img src="images/pro 2.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">Zesty Paws Advanced Calming Bites for Dogs</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-empty">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 309</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-display-card">
+                        <div class="product-image-wrapper">
+                              <div class="product-placeholder-image">
+                               <img src="images/pro 3.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">VetIQ Calming - 60 Count</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 459</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-display-card">
+                        <div class="product-image-wrapper">
+                             <div class="product-placeholder-image">
+                               <img src="images/pro 4.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">Pet Honesty Hemp Calming Max Strength Soft Chews</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-empty">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 599</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5 -->
+                    <div class="product-display-card">
+                        <div class="product-image-wrapper">
+                              <div class="product-placeholder-image">
+                               <img src="images/pro 5.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">Natural Calming Aid for Dogs & Cats - Stress Relief</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 399</div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6 -->
+                    <div class="product-display-card">
+                        <div class="product-image-wrapper">
+                             <div class="product-placeholder-image">
+                               <img src="images/pro 6.png">
+                            </div>
+                        </div>
+                        <div class="product-info-section">
+                            <h3 class="product-title-name">Premium Relaxation Treats for Anxious Pets</h3>
+                            <div class="star-rating-display">
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-filled">★</span>
+                                <span class="star-icon-empty">★</span>
+                            </div>
+                            <div class="product-price-amount">₹ 449</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="carousel-navigation-controls carousel-prev-button" id="prevButton">
+                    <span class="nav-arrow-icon">‹</span>
+                </button>
+                <button class="carousel-navigation-controls carousel-next-button" id="nextButton">
+                    <span class="nav-arrow-icon">›</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+     <footer class="footer-wrapper">
+        <div class="footer-container">
+            <!-- Brand Section -->
+            <div class="brand-section">
+                <div class="brand-header">
+                    <div class="fpaw-prints">
+                        <div class="fpaw-print"><img src="images/navlogo.png"></div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-section-title">PetPalooza</div>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">About Us</li>
+                    <li class="footer-nav-item">Contact Us</li>
+                    <li class="footer-nav-item">Shop</li>
+                    <li class="footer-nav-item">Blog</li>
+                    <li class="footer-nav-item">FAQ</li>
+                </ul>
+            </div>
+
+            <!-- Categories Section -->
+            <div class="categories-section">
+                <div class="footer-section-title">Categories</div>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">Dog</li>
+                    <li class="footer-nav-item">Cat</li>
+                    <li class="footer-nav-item">Fish</li>
+                    <li class="footer-nav-item">Rats</li>
+                    <li class="footer-nav-item">Rabbits</li>
+                    <li class="footer-nav-item">Hamsters</li>
+                    <li class="footer-nav-item">Guinea pigs</li>
+                </ul>
+            </div>
+
+            <!-- Support Section -->
+            <div class="support-section">
+                <div class="footer-section-title">Support</div>
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">Privacy policy</li>
+                    <li class="footer-nav-item">Refund & returns policy</li>
+                    <li class="footer-nav-item">Shipping policy</li>
+                    <li class="footer-nav-item">Terms & conditions</li>
+                </ul>
+            </div>
+
+            <!-- Social Media and Contact Section -->
+            <div class="social-media-section">
+                <div class="social-follow">
+                    <div class="footer-section-title">Follow</div>
+                    <div class="fsocial-icons">
+                        <div class="fsocial-icon facebook-icon"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="fsocial-icon instagram-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="fsocial-icon youtube-icon"><i class="fa-brands fa-youtube"></i></div>
+                        <div class="fsocial-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <div class="footer-section-title">Get in Touch</div>
+                    <div class="fcontact-info">
+                        Call: +91-1234567890<br>
+                        Email: support@petpalooza.com
+                    </div>
+                </div>
+
+                <div class="subscription-area">
+                    <div class="subscribe-title">For Subscribe,</div>
+                    <input type="email" placeholder="Email" class="email-input-field">
+                    <button class="subscribe-btn">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        //Customer Review Form
+         document.addEventListener('DOMContentLoaded', function() {
+            // Star Rating Functionality
+            const starRatingContainer = document.getElementById('userStarRating');
+            const ratingStars = starRatingContainer.querySelectorAll('.user-rating-star');
+            const ratingDisplay = document.getElementById('ratingDisplay');
+            let currentRating = 0;
+
+            // Star rating event handlers
+            ratingStars.forEach((star, index) => {
+                // Mouse enter - highlight stars up to this one
+                star.addEventListener('mouseenter', function() {
+                    highlightStars(index + 1, 'hover');
+                });
+
+                // Click - set rating
+                star.addEventListener('click', function() {
+                    currentRating = index + 1;
+                    setRating(currentRating);
+                    updateRatingDisplay(currentRating);
+                });
+            });
+
+            // Mouse leave container - reset to current rating
+            starRatingContainer.addEventListener('mouseleave', function() {
+                if (currentRating > 0) {
+                    setRating(currentRating);
+                } else {
+                    clearStarHighlight();
+                }
+            });
+
+            function highlightStars(rating, type = 'active') {
+                ratingStars.forEach((star, index) => {
+                    star.classList.remove('star-active', 'star-hovered');
+                    if (index < rating) {
+                        if (type === 'hover') {
+                            star.classList.add('star-hovered');
+                        } else {
+                            star.classList.add('star-active');
+                        }
+                    }
+                });
+            }
+
+            function setRating(rating) {
+                currentRating = rating;
+                highlightStars(rating, 'active');
+            }
+
+            function clearStarHighlight() {
+                ratingStars.forEach(star => {
+                    star.classList.remove('star-active', 'star-hovered');
+                });
+            }
+
+            function updateRatingDisplay(rating) {
+                const ratingTexts = {
+                    1: 'Poor (1 star)',
+                    2: 'Fair (2 stars)', 
+                    3: 'Good (3 stars)',
+                    4: 'Very Good (4 stars)',
+                    5: 'Excellent (5 stars)'
+                };
+                ratingDisplay.textContent = ratingTexts[rating] || 'Click to rate this product';
+            }
+
+            // Form Submission
+            const reviewForm = document.getElementById('reviewForm');
+            const submitButton = document.getElementById('submitButton');
+
+            reviewForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Validate rating
+                if (currentRating === 0) {
+                    alert('Please select a rating before submitting your review.');
+                    return;
+                }
+
+                // Get form data
+                const reviewData = {
+                    rating: currentRating,
+                    review: document.getElementById('reviewText').value.trim(),
+                    name: document.getElementById('reviewerName').value.trim(),
+                    email: document.getElementById('reviewerEmail').value.trim(),
+                    saveInfo: document.getElementById('saveInfo').checked
+                };
+
+                // Basic validation
+                if (!reviewData.review || !reviewData.name || !reviewData.email) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(reviewData.email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+
+                // Simulate form submission
+                submitButton.textContent = 'Submitting...';
+                submitButton.disabled = true;
+
+                setTimeout(() => {
+                    alert(`Review Submitted Successfully!\n\nRating: ${reviewData.rating} stars\nName: ${reviewData.name}\nEmail: ${reviewData.email}\nReview: ${reviewData.review.substring(0, 100)}...`);
+                    
+                    // Reset form
+                    reviewForm.reset();
+                    currentRating = 0;
+                    clearStarHighlight();
+                    updateRatingDisplay(0);
+                    
+                    submitButton.textContent = 'Submit';
+                    submitButton.disabled = false;
+                }, 1500);
+            });
+
+            // Real-time form validation
+            const requiredFields = [
+                document.getElementById('reviewText'),
+                document.getElementById('reviewerName'),
+                document.getElementById('reviewerEmail')
+            ];
+
+            function validateForm() {
+                const isFormValid = requiredFields.every(field => field.value.trim() !== '') && currentRating > 0;
+                submitButton.disabled = !isFormValid;
+            }
+
+            requiredFields.forEach(field => {
+                field.addEventListener('input', validateForm);
+            });
+
+            // Initialize form state
+            validateForm();
+        });
+         // Product images data
+        const productImages = [
+            "images/pay image.png",
+            "images/tu 2.png",
+            "images/turkey 1.png",
+            "images/tu 3.png",
+            "images/tu 4.png"
+        ];
+
+
+        // Initialize functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Quantity controls
+            const decreaseBtn = document.getElementById('decreaseQty');
+            const increaseBtn = document.getElementById('increaseQty');
+            const quantityInput = document.getElementById('quantityInput');
+
+            // Decrease quantity function
+            decreaseBtn.addEventListener('click', function() {
+                let currentValue = parseInt(quantityInput.value);
+                if (currentValue > 1) {
+                    quantityInput.value = currentValue - 1;
+                }
+            });
+
+            // Increase quantity function
+            increaseBtn.addEventListener('click', function() {
+                let currentValue = parseInt(quantityInput.value);
+                quantityInput.value = currentValue + 1;
+            });
+
+            // Size selection
+            const sizeButtons = document.querySelectorAll('.size-option-button');
+            sizeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all size buttons
+                    sizeButtons.forEach(btn => btn.classList.remove('selected-size'));
+                    // Add active class to clicked button
+                    this.classList.add('selected-size');
+                });
+            });
+
+            // Thumbnail image functionality
+            const thumbnailItems = document.querySelectorAll('.thumbnail-image-item');
+            const mainImage = document.getElementById('mainProductImage');
+            const imageDots = document.querySelectorAll('.image-dot-indicator');
+
+            // Function to update main image
+            function updateMainImage(imageIndex) {
+                // Update main image
+                mainImage.src = productImages[imageIndex];
+                
+                // Update active thumbnail
+                thumbnailItems.forEach(item => item.classList.remove('active-thumbnail'));
+                thumbnailItems[imageIndex].classList.add('active-thumbnail');
+                
+                // Update active dot
+                imageDots.forEach(dot => dot.classList.remove('active-dot'));
+                imageDots[imageIndex].classList.add('active-dot');
+            }
+
+            // Add click event to thumbnails
+            thumbnailItems.forEach((item, index) => {
+                item.addEventListener('click', function() {
+                    updateMainImage(index);
+                });
+            });
+
+            // Add click event to dots
+            imageDots.forEach((dot, index) => {
+                dot.addEventListener('click', function() {
+                    updateMainImage(index);
+                });
+            });
+
+            // Action buttons
+            const addToCartBtn = document.querySelector('.add-cart-button');
+            const buyNowBtn = document.querySelector('.buy-now-button');
+
+            addToCartBtn.addEventListener('click', function() {
+                const selectedSize = document.querySelector('.size-option-button.selected-size').dataset.size;
+                const quantity = quantityInput.value;
+                alert(`Added ${quantity} x ${selectedSize} Turkey, Chickpea & Sweet Potato to cart!`);
+            });
+
+            buyNowBtn.addEventListener('click', function() {
+                const selectedSize = document.querySelector('.size-option-button.selected-size').dataset.size;
+                const quantity = quantityInput.value;
+                alert(`Proceeding to buy ${quantity} x ${selectedSize} Turkey, Chickpea & Sweet Potato!`);
+            });
+        });
+        //Navbar
+           //Navbar
+          // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        const searchSuggestions = document.getElementById('searchSuggestions');
+        const clearSearchBtn = document.getElementById('clearSearch');
+        const closeSuggestionsBtn = document.getElementById('closeSuggestions');
+
+        searchInput.addEventListener('focus', function() {
+            if (this.value.length > 0) {
+                searchSuggestions.classList.add('show');
+            }
+        });
+
+        searchInput.addEventListener('input', function() {
+            if (this.value.length > 0) {
+                clearSearchBtn.style.display = 'block';
+                searchSuggestions.classList.add('show');
+            } else {
+                clearSearchBtn.style.display = 'none';
+                searchSuggestions.classList.remove('show');
+            }
+        });
+
+        clearSearchBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            this.style.display = 'none';
+            searchSuggestions.classList.remove('show');
+            searchInput.focus();
+        });
+
+        closeSuggestionsBtn.addEventListener('click', function() {
+            searchSuggestions.classList.remove('show');
+        });
+
+        // Close suggestions when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!searchInput.contains(event.target) && !searchSuggestions.contains(event.target)) {
+                searchSuggestions.classList.remove('show');
+            }
+        });
+
+        // Dropdown functionality
+        const categoryTriggers = document.querySelectorAll('.category-trigger[data-dropdown]');
+        let activeDropdown = null;
+
+        categoryTriggers.forEach(trigger => {
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                const dropdownId = this.getAttribute('data-dropdown');
+                const dropdown = document.getElementById(dropdownId);
+                
+                // Close any currently active dropdown
+                if (activeDropdown && activeDropdown !== dropdown) {
+                    activeDropdown.classList.remove('show');
+                    activeDropdown.previousElementSibling.classList.remove('active');
+                }
+                
+                // Toggle current dropdown
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                    this.classList.remove('active');
+                    activeDropdown = null;
+                } else {
+                    dropdown.classList.add('show');
+                    this.classList.add('active');
+                    activeDropdown = dropdown;
+                }
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(event) {
+            const isDropdownTrigger = event.target.closest('.category-trigger[data-dropdown]');
+            const isDropdownContent = event.target.closest('.dropdown-content');
+            
+            if (!isDropdownTrigger && !isDropdownContent && activeDropdown) {
+                activeDropdown.classList.remove('show');
+                activeDropdown.previousElementSibling.classList.remove('active');
+                activeDropdown = null;
+            }
+        });
+
+        // Handle suggestion item clicks
+        document.querySelectorAll('.suggestion-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                searchInput.value = this.textContent;
+                searchSuggestions.classList.remove('show');
+                // Here you would typically perform the search or redirect
+                console.log('Searching for:', this.textContent);
+            });
+        });
+
+        // Prevent dropdown from closing when clicking inside
+        document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+            dropdown.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+
+        // Handle mobile responsiveness
+        function handleResize() {
+            if (window.innerWidth <= 768) {
+                // Close all dropdowns on mobile resize
+                if (activeDropdown) {
+                    activeDropdown.classList.remove('show');
+                    activeDropdown.previousElementSibling.classList.remove('active');
+                    activeDropdown = null;
+                }
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+        </script>
+    <script src="script.js"></script>
+</body>
+</html>
